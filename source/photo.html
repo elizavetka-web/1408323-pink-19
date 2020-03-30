@@ -4,16 +4,16 @@
 <meta charset="UTF-8">
 <title>proto</title>
 </head>
-
 <body>
-	 <header class="page-header">
-		  <a class="page-header__logo-image"><img class="page-header__logo-image">
+	  <header class="page-header">
+		  <a class="page-header__logo">
+			  <img class="page-header__logo-image" src="#"alt="Pink">
 		  </a>
 		  <nav class="main-nav">
 			  <button class="main-nav__toggle" type="button">Открыть меню</button>
 			  <div class="main-nav__wrapper">
 				  <ul class="main-nav__list site-list">
-				  <li class="site-list__item">
+				  <li class="site-list__item--active">
 					  <a href="#">Главная</a>
 				  </li>
 				  <li class="site-list__item">
@@ -29,77 +29,60 @@
 			  </div>
 		  </nav>
 	  </header>
-	
 	<main class="page-main">
 		<section class="boaed">
 			<h1 class="board__slogan">Фотографии <br>пользователей</h1>
 		</section>
-		
-		<section lenta>
-			<p class="conditions">Взгляните на фотографии, которые<br> выкладывают пользователи! <br>Видите, как не хватает ваших?</p>
-			<div class="block">
-				<img src="https://via.placeholder.com/150x150" class="block__photo--panaram">
-				<p class="block__name"><strong>Анна</strong> (5 МИНУТ НАЗАД)</p>
-				<p class="block__story">Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую трансляцию в перископе, задавате свои</p>
-				<div class row>
-					<img class="row__heart">
-					<p class="row__other--red">НРАВИТСЯ 215</p>
-				</div>
-			</div>
-			<div class="block">
-				<img src="https://via.placeholder.com/150x150" class="block__photo">
-				<p class="block__name"><strong>Левон</strong> (5 ЧАСОВ НАЗАД)</p>
-				<p class="block__story">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-				<div class row>
-					<img class="row__heart">
-					<p class="row__other--red">НРАВИТСЯ 356</p>
-				</div>
-			</div>
-			<div class="block">
-				<img src="https://via.placeholder.com/150x150" class="block__photo">
-				<p class="block__name"><strong>Антон</strong> (12 ЧАСОВ НАЗАД)</p>
-				<p class="block__story">Соседи будут рады!</p>
-				<div class row>
-					<img class="row__heart">
-					<p class="row__other--red">НРАВИТСЯ 666</p>
-				</div>
-			</div>
-			<div class="block">
-				<img src="https://via.placeholder.com/150x150" class="block__photo">
-				<p class="block__name"><strong>Борис</strong> (20 ЧАСОВ НАЗАД)</p>
-				<p class="block__story">Здесь могла быть ваша цитата о высоком и вечном.</p>
-				<div class row>
-					<img class="row__heart">
-					<p class="row__other--red">НРАВИТСЯ 215</p>
-				</div>
-			</div>
-			<div class="block">
-				<img src="https://via.placeholder.com/150x150" class="block__photo">
-				<p class="block__name"><strong>Сергей</strong> (25 ЧАСОВ НАЗАД)</p>
-				<p class="block__story">Самая кубанская в мире!</p>
-				<div class row>
-					<img class="row__heart">
-					<p class="row__other--red">НРАВИТСЯ 4</p>
-				</div>
-			</div>
-			<div class="block">
-				<img src="https://via.placeholder.com/150x150" class="block__photo">
-				<p class="block__name"><strong>Максим</strong> (40 ЧАСОВ НАЗАД)</p>
-				<p class="block__story">Где снег-ьл?</p>
-				<div class row>
-					<img class="row__heart">
-					<p class="row__other--red">НРАВИТСЯ 150</p>
-				</div>
-			</div>
-			<div class="block">
-				<img src="https://via.placeholder.com/150x150" class="block__photo">
-				<p class="block__name"><strong>Надежда</strong> (45 ЧАСОВ НАЗАД)</p>
-				<p class="block__story">Всем GM и взаимные лайки!</p>
-				<div class row>
-					<img class="row__heart">
-					<p class="row__other--red">НРАВИТСЯ 2560</p>
-				</div>
-			</div>
+		<p class="conditions">Взгляните на фотографии, которые<br> 
+		<section class="lenta">
+			выкладывают пользователи! <br>Видите, как не хватает ваших?</p>
+			<ul class="lenta__list">
+				<li class="lenta__item">
+					<img src="https://via.placeholder.com/150x150" class="lenta__photo--panaram">
+					<div class="lenta__metka">
+						<p class="lenta__text">ПОНАРАМА ДНЯ</p>
+					</div>
+				<p class="lenta__name"><strong>Анна</strong> (5 МИНУТ НАЗАД)</p>
+				<p class="lenta__story">Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую трансляцию в перископе, задавате свои</p>
+				<p class="lenta__like">НРАВИТСЯ: 215</p>
+				</li>
+				<li class="lenta__item">
+					<img src="https://via.placeholder.com/150x150" class="lenta__photo">
+				<p class="lenta__name"><strong>Левон</strong> (5 ЧАСОВ НАЗАД)</p>
+				<p class="lenta__story">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+				<p class="lenta__like">НРАВИТСЯ: 365</p>
+				</li>
+				<li class="lenta__item">
+					<img src="https://via.placeholder.com/150x150" class="lenta__photo">
+				<p class="lenta__name"><strong>Антон</strong> (12 ЧАСОВ НАЗАД)</p>
+				<p class="lenta__story">Соседи будут рады1</p>
+				<p class="lenta__like">НРАВИТСЯ: 666</p>
+				</li>
+				<li class="lenta__item">
+					<img src="https://via.placeholder.com/150x150" class="lenta__photo">
+				<p class="lenta__name"><strong>Борис</strong> (20 ЧАСОВ НАЗАД)</p>
+				<p class="lenta__story">Здесь могла быть ваша цитата о высоком и вечном.</p>
+				<p class="lenta__like">НРАВИТСЯ: 215</p>
+				</li>
+				<li class="lenta__item">
+					<img src="https://via.placeholder.com/150x150" class="lenta__photo">
+				<p class="lenta__name"><strong>Сергей</strong> (25 ЧАСОВ НАЗАД)</p>
+				<p class="lenta__story">Самая кубанская в мире!</p>
+				<p class="lenta__like">НРАВИТСЯ: 4</p>
+				</li>
+				<li class="lenta__item">
+					<img src="https://via.placeholder.com/150x150" class="lenta__photo">
+				<p class="lenta__name"><strong>Максим</strong> (40 ЧАСОВ НАЗАД)</p>
+				<p class="lenta__story">Где снег-то?</p>
+				<p class="lenta__like">НРАВИТСЯ: 150</p>
+				</li>
+				<li class="lenta__item">
+					<img src="https://via.placeholder.com/150x150" class="lenta__photo">
+				<p class="lenta__name"><strong>Надежда</strong> (45 ЧАСОВ НАЗАД)</p>
+				<p class="lenta__story">Всем GM и взаимные лайки!</p>
+				<p class="lenta__like">НРАВИТСЯ: 2560</p>
+				</li>
+			</ul>
 		</section>
 	</main>
 	  
