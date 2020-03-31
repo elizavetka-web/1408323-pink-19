@@ -5,86 +5,130 @@
 <title>proto</title>
 </head>
 <body>
-	  <header class="page-header">
-		  <a class="page-header__logo">
-			  <img class="page-header__logo-image" src="#"alt="Pink">
-		  </a>
+	 <header class="page-header page-header--index">
 		  <nav class="main-nav">
-			  <button class="main-nav__toggle" type="button">Открыть меню</button>
-			  <div class="main-nav__wrapper">
+			  <div class="main-nav__main-wrapper">
+				  <div class="main-wraper__logo-wraper">
+					  <a class="logo logo--page-header" href="#">
+						  <img class="logo--image">
+					  </a>
+					  <button class="main-nav__toggle">Открыть меню</button
+				  </div>
+				<div class="main-naw__wraper">
 				  <ul class="main-nav__list site-list">
-				  <li class="site-list__item--active">
-					  <a href="#">Главная</a>
-				  </li>
-				  <li class="site-list__item">
-					  <a>Фотографии</a>
-				  </li>
-				   <li class="site-list__item">
+				     <li class="site-list__item--active">
+					  <a>Главная</a>
+				     </li>
+				     <li class="site-list__item">
+					  <a href="#">Фотографии</a>
+				     </li>
+				     <li class="site-list__item">
 					  <a href="#">Конкурс</a>
-				  </li>
-				   <li class="site-list__item">
+				     </li>
+				     <li class="site-list__item">
 					  <a href="#">HTML ACADEMY</a>
-				  </li>
-			  </ul>
+				      </li>
+			       </ul>
+				</div>
 			  </div>
 		  </nav>
+			  <div class="page-header__wrapper">
+					  <section class="board--index">
+						  <div class="board__wraper">
+							  <h1 class="board__header">Фотографии пользователей</h1>
+						  </div>
+					  </section>
+				  </div>
 	  </header>
+	 
 	<main class="page-main">
-		<section class="boaed">
-			<h1 class="board__slogan">Фотографии <br>пользователей</h1>
-		</section>
-		<p class="conditions">Взгляните на фотографии, которые<br> 
 		<section class="lenta">
-			выкладывают пользователи! <br>Видите, как не хватает ваших?</p>
-			<ul class="lenta__list">
-				<li class="lenta__item">
-					<img src="https://via.placeholder.com/150x150" class="lenta__photo--panaram">
-					<div class="lenta__metka">
-						<p class="lenta__text">ПОНАРАМА ДНЯ</p>
+			<div class="lenta__main-wrapper">
+				<div class="lenta__slogan-wrapper">
+					<p class="lenta__slogan">Взгляните на фотографии, которые<br>выкладывают пользователи! <br>Видите, как не хватает ваших?</p>
+					
+					<secrion class="user-photo">
+						<div class="user-photo__photo-wrapper">
+							<div class="user-photo__evant">Панорама дня</div>
+							<picture class="user-photo__image">
+								<img class="user-photo__panoram">
+							</picture>
+						</div>
+						<section class="user-photo__artical">
+								<h4 class="user-photo__titile">Анна<span>(5 минут назад)</span></h4>
+								<p class="user-photo__contant">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
+							</section>
+					</secrion>
+					
+					<div class="photo-sectoin__wrapper">
+						<section class="user-photo">
+							<picture class="user-photo__image">
+								<img class="user-photo__mobile-image">
+							</picture>
+							<section class="user-photo__artical">
+								<h4 class="user-photo__titile">Левон<span>(5 часовы назад)</span></h4>
+								<p class="user-photo__contant">Вчера он на луну летал, сегодня в&nbsp;руки к нам попал.</p>
+								<footer class="user-photo__footer">Нравится: <span class="user-photo__counter-like">356</span></footer>
+							</section>
+						</section>
+						
+						<section class="user-photo">
+							<picture class="user-photo__image">
+								<img class="user-photo__mobile-image">
+							</picture>
+							<section class="user-photo__artical">
+								<h4 class="user-photo__titile">Антон<span>(15 часовы назад)</span></h4>
+								<p class="user-photo__contant">Соседи будут рады!</p>
+								<footer class="user-photo__footer">Нравится: <span class="user-photo__counter-like">666</span></footer>
+							</section>
+						</section>
+						
+						<section class="user-photo">
+							<picture class="user-photo__image">
+								<img class="user-photo__mobile-image">
+							</picture>
+							<section class="user-photo__artical">
+								<h4 class="user-photo__titile">Борис<span>(20 часовы назад)</span></h4>
+								<p class="user-photo__contant">Здесь могла быть ваша цитата о высоком и вечном.</p>
+								<footer class="user-photo__footer">Нравится: <span class="user-photo__counter-like">215</span></footer>
+							</section>
+						</section>
+						
+						<section class="user-photo">
+							<picture class="user-photo__image">
+								<img class="user-photo__mobile-image">
+							</picture>
+							<section class="user-photo__artical">
+								<h4 class="user-photo__titile">Сергей<span>(25 часовы назад)</span></h4>
+								<p class="user-photo__contant">Вчера он на луну летал, сегодня в&nbsp;руки к нам попал.</p>
+								<footer class="user-photo__footer">Нравится: <span class="user-photo__counter-like">4</span></footer>
+							</section>
+						</section>
+						
+						<section class="user-photo">
+							<picture class="user-photo__image">
+								<img class="user-photo__mobile-image">
+							</picture>
+							<section class="user-photo__artical">
+								<h4 class="user-photo__titile">Максим<span>(40 часовы назад)</span></h4>
+								<p class="user-photo__contant">Где снег-то?</p>
+								<footer class="user-photo__footer">Нравится: <span class="user-photo__counter-like">150</span></footer>
+							</section>
+						</section>
+						
+						<section class="user-photo">
+							<picture class="user-photo__image">
+								<img class="user-photo__mobile-image">
+							</picture>
+							<section class="user-photo__artical">
+								<h4 class="user-photo__titile">Надежда<span>(40 часовы назад)</span></h4>
+								<p class="user-photo__contant">Всем GM и взаимные лайки!</p>
+								<footer class="user-photo__footer">Нравится: <span class="user-photo__counter-like">2560</span></footer>
+							</section>
+						</section>
 					</div>
-				<p class="lenta__name"><strong>Анна</strong> (5 МИНУТ НАЗАД)</p>
-				<p class="lenta__story">Прыгать или нет? Напишите в комментариях свой совет и смотрите прямую трансляцию в перископе, задавате свои</p>
-				<p class="lenta__like">НРАВИТСЯ: 215</p>
-				</li>
-				<li class="lenta__item">
-					<img src="https://via.placeholder.com/150x150" class="lenta__photo">
-				<p class="lenta__name"><strong>Левон</strong> (5 ЧАСОВ НАЗАД)</p>
-				<p class="lenta__story">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-				<p class="lenta__like">НРАВИТСЯ: 365</p>
-				</li>
-				<li class="lenta__item">
-					<img src="https://via.placeholder.com/150x150" class="lenta__photo">
-				<p class="lenta__name"><strong>Антон</strong> (12 ЧАСОВ НАЗАД)</p>
-				<p class="lenta__story">Соседи будут рады1</p>
-				<p class="lenta__like">НРАВИТСЯ: 666</p>
-				</li>
-				<li class="lenta__item">
-					<img src="https://via.placeholder.com/150x150" class="lenta__photo">
-				<p class="lenta__name"><strong>Борис</strong> (20 ЧАСОВ НАЗАД)</p>
-				<p class="lenta__story">Здесь могла быть ваша цитата о высоком и вечном.</p>
-				<p class="lenta__like">НРАВИТСЯ: 215</p>
-				</li>
-				<li class="lenta__item">
-					<img src="https://via.placeholder.com/150x150" class="lenta__photo">
-				<p class="lenta__name"><strong>Сергей</strong> (25 ЧАСОВ НАЗАД)</p>
-				<p class="lenta__story">Самая кубанская в мире!</p>
-				<p class="lenta__like">НРАВИТСЯ: 4</p>
-				</li>
-				<li class="lenta__item">
-					<img src="https://via.placeholder.com/150x150" class="lenta__photo">
-				<p class="lenta__name"><strong>Максим</strong> (40 ЧАСОВ НАЗАД)</p>
-				<p class="lenta__story">Где снег-то?</p>
-				<p class="lenta__like">НРАВИТСЯ: 150</p>
-				</li>
-				<li class="lenta__item">
-					<img src="https://via.placeholder.com/150x150" class="lenta__photo">
-				<p class="lenta__name"><strong>Надежда</strong> (45 ЧАСОВ НАЗАД)</p>
-				<p class="lenta__story">Всем GM и взаимные лайки!</p>
-				<p class="lenta__like">НРАВИТСЯ: 2560</p>
-				</li>
-			</ul>
+				</div>
 		</section>
-	</main>
-	  
+	</main>  
 </body>
 </html>
