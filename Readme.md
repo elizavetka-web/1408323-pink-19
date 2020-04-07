@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елизавета  Татенко](https://up.htmlacademy.ru/adaptive/19/user/1408323).
-* Наставник: `Неизвестно`.
+* Наставник: [Даниил Гаврилов](https://htmlacademy.ru/profile/id193541).
 
 ---
 
