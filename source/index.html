@@ -3,39 +3,41 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header page-header--index">
     <nav class="main-nav">
       <div class="main-nav__main-wrapper">
-        <div class="main-wraper__logo-wraper">
+        <div class="main-nav__logo-wrapper">
           <a class="logo logo--page-header" href="#">
             <img class="logo--image">
           </a>
-          <button class="main-nav__toggle">Открыть меню</button></div>
-        <div class="main-naw__wraper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item--active">
-              <a>Главная</a>
+          <button class="main-nav__toggle">Открыть меню</button>
+        </div>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">Фотографии</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Фотографии</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">Конкурс</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link"  href="#">Конкурс</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">HTML ACADEMY</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML ACADEMY</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <div class="page-header__wrapper">
-      <section class="board--index">
+      <section class=" board board--index">
         <div class="board__wrapper">
-          <h1 class="board__header">Взгляните на жизнь<br> иначе!</h1>
+          <h1 class="board__header">&nbsp;Взгляните на жизнь<br> иначе!</h1>
           <div class="board__apps">
             <a class="board__button">Скачать приложение</a>
             <a class="board__icon board__icon--apple" href="http://www.apple.com/itunes/working-itunes/market/"></a>
@@ -50,7 +52,9 @@
 
   <main class="page-main">
     <section class="advantages">
-      <h2 class="advantages__slogan">Устали от серости мегаполиса?<br>Нам есть, что предложить!</h2>
+      <h2 class="advantages__slogan">Устали от серости<br> мегаполиса?</h2>
+      <h2 class="advantages__slogan advantahes__slogan--second">Нам есть, что<br>предложить!</h2>
+		<div class="advantages__wrapper">
       <ul class="advantages__list">
         <li class="advantages__item">
           <div class="advantages__item-image--gray"></div>
@@ -58,26 +62,29 @@
           <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
             несколько кликов!</p>
         </li>
-        <li class="advantages__item--world">
+        <li class="advantages__item">
           <div class="advantages__item-image--pink"></div>
           <h3 class="advantages__title">Меняет мир вокруг</h3>
           <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
             усилить эффект</p>
         </li>
-        <li class="advantages__item--friends">
+        <li class="advantages__item">
           <div class="advantages__item-image--smile"></div>
           <h3 class="advantages__title">Заводит новых друзей</h3>
           <p class="advantages__description">Cтавьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
             новых</p>
         </li>
+		  <li class="advantages__item advantages__item-photo">
+        </li>
       </ul>
+			</div>
 
-      <div class="info__science-wrapper">
-        <div class="info__science">
-          <h3 class="info__title">Эффект на 24 часа!</h3>
-          <p class="info__text">Британские ученые провели исследования и доказали, что положительный эффект от
+     <div class="advantages__science-wrapper">
+        <div class="advantages__science">
+          <h3 class="advantages__title">Эффект на 24 часа!</h3>
+          <p class="advantages__text">Британские ученые провели исследования и доказали, что положительный эффект от
             использования приложения длится целые сутки!</p>
-          <a class="info__link" href="#">Узнать больше об исследовании</a>
+          <a class="advantages__link" href="#">Узнать больше об исследовании</a>
         </div>
       </div>
     </section>

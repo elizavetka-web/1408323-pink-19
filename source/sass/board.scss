@@ -1,0 +1,51 @@
+.board{
+  text-align: center;
+
+&--index {
+  min-height: 207px;
+  padding-top: 28px;
+  padding-bottom: 30px;
+  background-color: #1d2631;
+
+}
+
+&__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+&__header {
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+
+&__apps {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-between;
+  min-height: 213px;
+}
+
+&__button {
+  padding: 14px 33px 17px 37px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  border: 3px solid #fff;
+  border-radius: 30px;
+}
+
+&__text {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+}
