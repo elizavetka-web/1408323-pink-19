@@ -5,6 +5,11 @@
 @import"fonts.scss";
 @import"lenta.scss";
 @import"user-photo.scss";
+@import"reviews.scss";
+@import"price.scss";
+@import"page-footer.scss";
+@import"photo-load.scss";
+@import"forma.scss";
 html {
   font-family: sans-serif;
 }
@@ -27,4 +32,14 @@ p {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
 }

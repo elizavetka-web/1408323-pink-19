@@ -59,6 +59,14 @@
   margin-bottom: 38px;
 }
 
+&__item-photo {
+  padding-bottom: 318px;
+  background-image: url(../img/iphone-screen-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 50% 148px;
+  background-size: 157px auto;
+}
+
 &__science {
   display: none;
 }

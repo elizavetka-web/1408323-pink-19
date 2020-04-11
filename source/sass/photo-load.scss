@@ -1,0 +1,19 @@
+.photo-load{
+  &__content-wrapper{
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  &__content{
+    font-size: 14px;
+    line-height: 30px;
+
+    text-align: center;
+  }
+
+  &__post{
+    padding-top: 20px;
+    padding-bottom: 29px;
+    background-color: #f2f2f2;
+  }
+}

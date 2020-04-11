@@ -1,0 +1,124 @@
+.price{
+  padding-top: 91 px;
+  padding-bottom: 26px;
+  background-color: #f2f2f2;
+  background-size: 101% auto;
+  background-position: 50% 0;
+
+  &__wrapper{
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__swither{
+    display: none;
+  }
+
+  &__list{
+    width: 840px;
+    box-sizing: border-box;
+    transform: translateX(-280px);
+  }
+
+  &__list-head{
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #283645;
+
+    p{
+      margin-top: 2px;
+      margin-bottom: 0;
+      font-size: 24px;
+      font-weight: lighter;
+    }
+  }
+
+  &__list-body{
+    background-color: white;
+  }
+
+  &__value{
+    position: relative;
+    box-sizing: border-box;
+    min-width: 278px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    border-left: 2px solid #e5e5e5;
+
+    &--hit{
+      display: block;
+      top: 0;
+      left: -2px;
+
+      &::before {
+        position: absolute;
+        content: "хит";
+
+        height: 10px;
+        width: 28px;
+
+        top: 20px;
+        left: 9px;
+
+        font-size: 14px;
+        line-height: 14px;
+
+        text-align: center;
+        vertical-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #d22856;
+        transform: rotate(-45deg);
+
+        z-index: 10;
+      }
+    }
+
+    &--empty{
+      min-width: 0;
+
+      margin: 0;
+      padding: 0;
+
+      font-size: 0;
+      line-height: 0;
+
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  &__cell{
+    box-sizing: border-box;
+
+    padding-top: 16px;
+    padding-bottom: 13px;
+    padding-left: 22px;
+
+    font-size: 14px;
+    line-height: 30px;
+
+    text-transform: uppercase;
+
+    border: 2px solid #e5e5e5;
+    border-top: none;
+  }
+
+  &__nav{
+    margin-top: 20px;
+  }
+}
+
+.slider-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 59px;
+  min-height: 12px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 21px;
+}

@@ -13,6 +13,18 @@
   width: 280px;
   margin: 0 auto;
   position: relative;
+
+  &--index::before{
+    position: absolute;;
+    content: "";
+    width: 258px;
+    height: 286px;
+    top: -314px;
+    left: -20px;
+    background-image: url("../source/img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: 258px 286px;
+  }
 }
 
 
@@ -30,6 +42,26 @@
   justify-content: center;
   align-content: space-between;
   min-height: 213px;
+}
+
+&__icon{
+  display: inline-block;
+  vertical-align: middle;
+  align-self: baseline;
+  margin-top: 20px;
+
+  &--apple{
+    margin-top: 32px
+  }
+
+  &--android{
+    margin-left: 34px;
+    margin-right: 37px;
+  }
+
+  &--microsoft{
+    margin-top: 20px;
+  }
 }
 
 &__button {
