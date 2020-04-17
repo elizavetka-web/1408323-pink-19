@@ -52,8 +52,8 @@
 
   <main class="page-main">
     <section class="advantages">
-      <h2 class="advantages__slogan">Устали от серости<br> мегаполиса?</h2>
-      <h2 class="advantages__slogan advantahes__slogan--second">Нам есть, что<br>предложить!</h2>
+      <h2 class="advantages__slogan">Устали от серости мегаполиса?</h2>
+      <h2 class="advantages__slogan advantahes__slogan--second">Нам есть, что предложить!</h2>
 		<div class="advantages__wrapper">
       <ul class="advantages__list">
         <li class="advantages__item">
@@ -68,20 +68,19 @@
           <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
             усилить эффект</p>
         </li>
-        <li class="advantages__item">
-          <div class="advantages__item-image--smile"></div>
+        <li class="advantages__item advantages__item--img">
+          <div class="advantages__item-image advantages__item-image--smile"></div>
           <h3 class="advantages__title">Заводит новых друзей</h3>
           <p class="advantages__description">Cтавьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
             новых</p>
         </li>
-		    <li class="advantages__item advantages__item-photo"></li>
       </ul>
 			</div>
 
      <div class="advantages__science-wrapper">
         <div class="advantages__science">
-          <h3 class="advantages__title">Эффект на 24 часа!</h3>
-          <p class="advantages__text">Британские ученые провели исследования и доказали, что положительный эффект от
+          <h3 class="advantages__science-title">Эффект на 24 часа!</h3>
+          <p class="advantages__science-text">Британские ученые провели исследования и доказали, что положительный эффект от
             использования приложения длится целые сутки!</p>
           <a class="advantages__link" href="#">Узнать больше об исследовании</a>
         </div>
@@ -96,6 +95,7 @@
           <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-3">
           <div class="reviews__item">
               <h4 class="reviews__title">Николай Петров</h4>
+              <p class="reviews__intro">25 лет, водитель трамвая</p>
             <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
@@ -110,37 +110,32 @@
     <section class="price">
       <div class="price__wrapper">
         <div class="price__item">
-          <table class="price__list">
-            <thead class="price__list-head">
-              <th class="price__value price__value--empty"></th>
-              <th class="price__value">База<p>1,99 USD</p>
-              </th>
-              <th class="price__value price__value--hit">Стандарт<p>3,99 USD</p>
-              </th>
-              <th class="price__value">Анлим<p>9,99 USD</p>
-              </th>
-            </thead>
-            <thbody class="price__list-body">
-              <tr>
-                <td class="price__cell">Розовый фильтр</td>
-                <td class="price__cell price__cell--yes"></td>
-                <td class="price__cell price__cell--yes"></td>
-                <td class="price__cell price__cell--yes"></td>
-              </tr>
-              <tr>
-                <td class="price__cell">Смайлики</td>
-                <td class="price__cell price__cell--no"></td>
-                <td class="price__cell price__cell--yes"></td>
-                <td class="price__cell price__cell--yes"></td>
-              </tr>
-              <tr>
-                <td class="price__cell">Комментарии</td>
-                <td class="price__cell price__cell--no"></td>
-                <td class="price__cell price__cell--no"></td>
-                <td class="price__cell price__cell--yes"></td>
-              </tr>
-            </thbody>
-          </table>
+          <div class="price__table">
+            <ul class="price__empty">
+              <li class="price__head price__head--empty"></li>
+              <li class="price__cell">Розовый фильтр</li>
+              <li class="price__cell">Смайлики</li>
+              <li class="price__cell">Комментарии</li>
+            </ul>
+            <ul class="price__base">
+              <li class="price__head">База<p>1,99 USD</p></li>
+              <li class="price__cell price__cell--ok">Розовый фильтр</li>
+              <li class="price__cell price__cell--no">Смайлики</li>
+              <li class="price__cell price__cell--no">Комментарии</li>
+            </ul>
+            <ul class="price__standart">
+              <li class="price__head price__head--hit">Стандарт<p>3,99 USD</p></li>
+              <li class="price__cell price__cell--ok">Розовый фильтр</li>
+              <li class="price__cell price__cell--ok">Смайлики</li>
+              <li class="price__cell price__cell--ok">Комментарии</li>
+            </ul>
+            <ul class="price__anlim">
+              <li class="price__head">Анлим<p>9,99 USD</p></li>
+              <li class="price__cell price__cell--ok">Розовый фильтр</li>
+              <li class="price__cell price__cell--ok">Смайлики</li>
+              <li class="price__cell price__cell--ok">комментарии</li>
+            </ul>
+          </div>
           <div class="slider-items price__nav">
             <label class="slider-items__btn" for="price-radio-1">1</label>
             <label class="slider-items__btn slider-items__btn--active" for="price-radio-2">2</label>

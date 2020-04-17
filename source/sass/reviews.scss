@@ -24,6 +24,7 @@
   }
 
   &__title{
+    font-weight: bold;
     margin-bottom: 13px;
   }
 
@@ -39,6 +40,38 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+  }
 }
 
+@media(min-width: 660px){
+  .reviews{
+    padding-top: 1px;
+
+    &__wrapper{
+      width: 620px;
+    }
+
+    &__item{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__content{
+      font-size: 18px;
+      order: 0;
+    }
+
+    &__title{
+      margin-top: 22px;
+      margin-bottom: 18px;
+      order: 1;
+    }
+
+    &__intro {
+      margin-top: 0px;;
+      font-size: 14px;
+      order: 2;
+    }
+  }
 }

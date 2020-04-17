@@ -2,6 +2,21 @@
 .page-header {
    color: #fff;
    background-color: #1d2631;
+   background-image: url(../img/bg-back-mobile@1x.jpg);
+
+   &--index{
+    min-height: 729px;
+   }
+}
+
+@media(min-width: 660px){
+  .page-header{
+    min-height: 440px;
+
+    &--index{
+      background-position: 50% 0;
+    }
+  }
 }
 
 
