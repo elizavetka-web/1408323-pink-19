@@ -1,0 +1,35 @@
+@import"page-header.scss";
+@import"advantages.scss";
+@import"main-nav.scss";
+@import"board.scss";
+@import"fonts.scss";
+@import"lenta.scss";
+@import"user-photo.scss";
+@import"reviews.scss";
+@import"price.scss";
+@import"page-footer.scss";
+@import"photo-load.scss";
+@import"forma.scss";
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open Sans","Arial","Helvetica","Garuda",sans-serif;
+  color: #283645;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}

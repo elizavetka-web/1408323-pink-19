@@ -1,34 +1,35 @@
 <!doctype html>
 <html lang="ru">
+<head>
 
-  <head>
   <meta charset="UTF-8">
   <title>form</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="page-header page-header--index">
+  <header class="page-header">
     <nav class="main-nav">
       <div class="main-nav__main-wrapper">
-        <div class="main-wraper__logo-wraper">
+        <div class="main-nav__logo-wrapper">
           <a class="logo logo--page-header" href="#">
             <img class="logo--image">
           </a>
           <button class="main-nav__toggle">Открыть меню</button>
         </div>
-        <div class="main-naw__wraper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item--active">
-              <a>Главная</a>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">Фотографии</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">Конкурс</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link"  href="form.html">Конкурс</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">HTML ACADEMY</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML ACADEMY</a>
             </li>
           </ul>
         </div>
@@ -43,48 +44,67 @@
     </div>
   </header>
   <main class="page-main">
-    <section class="forma">
-      <p class="conditions">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную
+  <p class="conditions">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную
         карту! Пожалуйста, заполните форму ниже:</p>
-      <form class=" forma__initial">
-        <h4 class="form__header">ФАМИЛИЯ:</h4>
-        <input type="text" name="firstname">
-        <h4 class="form__header">ИМЯ:</h4>
-        <input type="text" name="firstname">
-        <h4 class="form__header">ОТЧЕСТВО:</h4>
-        <input type="text" name="firstname">
-      </form>
+        <section class="forma">
+          <form class="forma__generous forma__generous--initial">
+            <div class="forma__item">
+              <h4 class="forma__header">ФАМИЛИЯ:</h4>
+              <input class="text--init" type="text" name="firstname">
+            </div>
+            <div class="forma__item">
+              <h4 class="forma__header">ИМЯ:</h4>
+              <input class="text--init" type="text" name="firstname">
+            </div>
+            <div class="forma__item">
+              <h4 class="forma__header">ОТЧЕСТВО:</h4>
+              <input class="text--init" type="text" name="firstname">
+            </div>
+            </form>
 
-      <form class="forma__progress">
-        <h4 class="form__header form__header--intro"> ВАШИ БЕЗБАШЕННЫЕ <br> ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</h4>
-        <input type="checkbox" name="type1">Сделал селфи с акулой<br>
-        <input type="checkbox" name="type2">Обгорел на пляже<br>
-        <input type="checkbox" name="type3">Видел Чака Норриса<br>
-        <input type="checkbox" name="type4">Накупил сувениров<br>
-        <input type="checkbox" name="type5">Удержал башню<br>
-        <input type="checkbox" name="type6">Разгромил отель<br>
-      </form>
+            <div class="forma__generous--color-wrapper">
+              <fieldset class="forma__generous forma__generous--app">
+                <legend class="forma__header forma__header--intro">С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ?:</legend>
+                <input class="forma-generous__radio" type="checkbox" name="type7">Pink для IOS<br>
+                <input class="forma__generous__radio" type="checkbox" name="type8">Pnk на Android<br>
+                <input class="forma__generous__radio"type="checkbox" name="type9">Windows Phone<br>
+              </fieldset>
+          </div>
 
-      <form class="forma__contact">
-        <h4 class="form__header">НОМЕР ТЕЛЕФОНА:</h4>
-        <input type="prone" name="phone">
-        <h4 class="form__header">АДРЕС ПОЧТЫ::</h4>
-        <input type="email" name="email">
-      </form>
+            <fieldset class="forma__generous forma__generous--contact">
+              <legend class="forma__header forma__header--intro">Контактная информация</legend>
+            <div class="forma__list">
+              <h4 class="forma__header forma__header--down">НОМЕР ТЕЛЕФОНА:</h4>
+              <input class="text--inner" type="prone" name="phone">
+            </div>
+            <div class="forma__list">
+              <h4 class="forma__header forma__header--down">АДРЕС ПОЧТЫ:</h4>
+              <input class="text--inner" type="email" name="email">
+            </div>
+            </fieldset>
 
-      <form class="forma__opros">
-        <h4 class="form__header form__header--intro">С КАКИМ ПРИЛОЖЕНИЕМ ПУТЕШЕСТВОВАЛИ?:</h4>
-        <input type="checkbox" name="type7">Pink для IOS<br>
-        <input type="checkbox" name="type8">Pnk на Android<br>
-        <input type="checkbox" name="type9">Windows Phone<br>
+            <div class="forma__generous--color-wrapper">
+              <fieldset class="forma__generous forma__generous--progress">
+                <legend class="forma__header forma__header--intro"> ВАШИ БЕЗБАШЕННЫЕ&nbsp; ДОСТИЖЕНИЯ В ПУТЕШЕСТВИИ</legend>
+                <input class="forma__generous__radio" type="checkbox" name="type1">Сделал селфи с акулой<br>
+                <input class="forma__generous__radio" type="checkbox" name="type2">Обгорел на пляже<br>
+                <input class="forma__generous__radio" type="checkbox" name="type3">Видел Чака Норриса<br>
+                <input class="forma__generous__radio" type="checkbox" name="type4">Накупил сувениров<br>
+                <input class="forma__generous__radio" type="checkbox" name="type5">Удержал башню<br>
+                <input class="forma__generous__radio" type="checkbox" name="type6">Разгромил отель<br>
+              </fieldset>
+          </div>
 
-        <form class="forma__emotions">
-          <h4 class="form__header form__header--intro"> ОПИШИТЕ СВОИ ЭМОЦИИ</h4>
-          <input type="message" name="message" value="Можно прям в красках, не стесняясь в выражениях">
-        </form>
-        <button class="forma__button">ОТПРАВИТЬ ФОРМУ</button>
-        <div class="forma__require">* — обязательные поля</div>
-    </section>
+            <fieldset class="forma__generous forma__generous--emotions">
+              <legend class="forma__header forma__header--intro"> ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+              <textarea rows="6" id="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+
+            <div class="forma__generous forma__generous--submit">
+            <button class="forma__button">ОТПРАВИТЬ ФОРМУ</button>
+            <div class="forma__require">* — обязательные поля</div>
+          </div>
+            </section>
   </main>
 
   <footer class="page-footer">

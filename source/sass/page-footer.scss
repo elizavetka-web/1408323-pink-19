@@ -1,0 +1,115 @@
+.page-footer{
+  position: relative;
+  padding-top: 41px;
+
+  &__wrapper{
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  &__contacts{
+    text-align: center;
+	  padding-bottom: 41px;
+  }
+
+  &__title{
+    margin-bottom: 35px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: lighter;
+  }
+
+  &__action{
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 3px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__info, &__mail{
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #d22856;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  &__mail{
+    text-decoration: none;
+ }
+
+ &__mail:hover {
+   color: #283645;
+   text-decoration: underline;
+}
+
+&__mail:active {
+  color: rgba(40, 54, 69, 0.3);
+  text-decoration: none;
+}
+
+&__call-us,&__write-us,&__visit-us {
+   margin-bottom: 23px;
+  }
+
+&__map {
+  height: 200px;
+  background-color: #f2f2f2;
+  background-size: 100% auto;
+}
+
+&__links--visual{
+	display: none;
+}
+}
+
+@media(min-width: 660px){
+  .page-footer{
+    padding-top: 46px;
+
+    &__wrapper{
+      width: 620px;
+    }
+
+    &__contacts{
+      padding-bottom: 26px;
+    }
+
+    &__title{
+      width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 40px;
+      line-height: 48px;
+      margin-bottom: 45px;
+    }
+
+    &__call-us{
+      margin-bottom: 47px;
+      width: 300px;
+      float: left;
+    }
+
+    &__write-us{
+      margin-bottom: 47px;
+      width: 300px;
+      float: right;
+    }
+
+    &__visit-us{
+      width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__action{
+      margin-bottom: 4px;
+    }
+
+    &__info{
+      line-height: 30px;
+    }
+  }
+}
+
