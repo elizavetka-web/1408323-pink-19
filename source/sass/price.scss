@@ -1,13 +1,26 @@
 .price{
-  padding-top: 91 px;
+  padding-top: 91px;
   padding-bottom: 26px;
   background-color: #f2f2f2;
-  background-size: 101% auto;
-  background-position: 50% 0;
+  position: relative;
+
+  &::after{
+    content:'';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 100vw solid white;
+    border-bottom: 6vw solid transparent;
+  }
+
+
 
   &__wrapper{
     width: 100%;
     overflow: hidden;
+    position: relative;
   }
 
   &__base {
@@ -33,6 +46,7 @@
 
   &__table{
     display: flex;
+    margin-top: 129px;
   }
 
   &__head{
@@ -83,15 +97,17 @@
   }
 
   &__cell{
-      padding-top: 16px;
-      padding-bottom: 13px;
-      padding-left: 22px;
-      font-size: 14px;
-      line-height: 30px;
-      text-transform: uppercase;
-      border-bottom: 2px solid #e5e5e5;
-      border-top: none;
-      background-color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 13px;
+    padding-left: 22px;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #e5e5e5;
+    border-top: none;
+    background-color: white;
   }
 
   &__nav{
@@ -131,6 +147,7 @@ ul{
     &__table{
       margin-left: 20px;
       position: relative;
+      margin: 0 auto;
     }
 
     &__empty{
