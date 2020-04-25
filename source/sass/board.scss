@@ -33,6 +33,7 @@
   }
 
   &__header {
+    display: none;
     font-weight: lighter;
 
     font-size: 24px;
@@ -61,7 +62,12 @@
 
 @media (min-width: 660px) {
   .board {
+
     background-color: transparent;
+
+    &__wrapper{
+      width: 620px;
+    }
 
     &--index {
       width: 620px;
