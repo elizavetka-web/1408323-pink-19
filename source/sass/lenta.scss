@@ -16,5 +16,27 @@
     width: 280px;
     margin: 0 auto;
   }
+}
 
+@media(min-width:660px){
+  .lenta__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 620px;
+  }
+}
+
+@media(min-width:1200px){
+  .lenta{
+
+    &__slogan-wrapper{
+      width: 100%;
+    }
+
+    &__wrapper{
+      width: 940px;
+      align-content: space-between;
+    }
+  }
 }

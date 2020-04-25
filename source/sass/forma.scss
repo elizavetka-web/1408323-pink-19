@@ -282,3 +282,13 @@ h4{
 		height: 190px;
 	}
 }
+
+@media(min-width: 1200px){
+  .forma{
+    &__generous{
+      width: 940px;
+      margin: 0 auto;
+      padding: 28px 0 30px;
+    }
+  }
+}

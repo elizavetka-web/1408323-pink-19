@@ -132,6 +132,11 @@
   .board {
     clear: both;
 
+    &__wrapper{
+      width: 940px;
+      font-weight: lighter;
+    }
+
     &--index {
       padding-bottom: 123px;
 

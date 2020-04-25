@@ -19,12 +19,7 @@
   }
 
   &__wrapper {
-    &::after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    position: relative;
+
     padding-top: 36px;
   }
 

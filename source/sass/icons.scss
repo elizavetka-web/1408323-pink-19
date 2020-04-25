@@ -26,6 +26,84 @@
   fill: #f25b26;
 }
 
+.arrow {
+  position: absolute;
+
+  fill: #bec2c7;
+  top: 0;
+
+  z-index: 10;
+}
+
+.reviews__toggle--prev .arrow {
+  left: 0;
+}
+
+.reviews__toggle--next .arrow {
+  right: 0;
+}
+
+.reviews__toggle .arrow:hover {
+  fill: #7e868f;
+}
+
+.reviews__toggle:active .arrow {
+  opacity: 0.1;
+}
+
+.net-links {
+  padding-top: 3px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  fill: #d22856;
+
+  &__link{
+    position: relative;
+
+    margin: 0 6px;
+
+    width: 47px;
+    height: 47px;
+
+    font-size: 0;
+    line-height: 0;
+
+    background-color: white;
+
+    border: 2px solid #e9ebec;
+    border-radius: 50%;
+  }
+  &__link:hover {
+    border-color: #283645;
+    transition: 0.4s;
+  }
+
+  &__link:active {
+    opacity: 0.1;
+    transition: 0.1s;
+  }
+
+  &--twitter {
+    left: 16px;
+    top: 16px;
+  }
+
+  &--facebook {
+    left: 19px;
+    top: 13px;
+  }
+
+  &--youtube {
+    left: 17px;
+    top: 16px;
+  }
+}
+
 @media(min-width:660px){
   .price .icon-yes,
   .price .icon-no {
