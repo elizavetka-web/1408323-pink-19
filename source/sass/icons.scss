@@ -1,0 +1,169 @@
+.logo-pink-white-mobile,
+.logo-pink-white-tablet,
+.logo-pink-white-desktop {
+  fill: #ffffff;
+}
+.logo-pink-blue-mobile,
+.logo-pink-blue-desktop {
+  fill: #283645;
+}
+
+.logo-pink-white-tablet,
+.logo-pink-white-desktop,
+.logo-pink-blue-desktop {
+  display: none;
+}
+.price .icon-yes,
+  .price .icon-no {
+    display: block;
+    width: 31px;
+    margin-left: 60px;
+  }
+
+.price .icon-yes {
+  fill: #3dc644;
+}
+
+.price .icon-no {
+  fill: #f25b26;
+}
+
+.arrow {
+  position: absolute;
+
+  fill: #bec2c7;
+  top: 0;
+
+  z-index: 10;
+}
+
+.heart{
+  fill: #d22856;
+}
+.user-photo .heart{
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin-left: 20px;
+}
+
+.reviews__toggle--prev .arrow {
+  left: 0;
+}
+
+.reviews__toggle--next .arrow {
+  right: 0;
+}
+
+.reviews__toggle .arrow:hover {
+  fill: #7e868f;
+}
+
+.reviews__toggle:active .arrow {
+  opacity: 0.1;
+}
+
+.svg-triangle-decor {
+  position: relative;
+}
+
+.bg-triangle-white-footer {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1000;
+}
+
+
+.net-icon {
+  position: absolute;
+
+  fill: #d22856;
+
+  &--twitter {
+    left: 16px;
+    top: 16px;
+  }
+
+  &--facebook {
+    left: 19px;
+    top: 13px;
+  }
+
+  &--youtube {
+    left: 17px;
+    top: 16px;
+  }
+}
+
+.net-links {
+  padding-top: 3px;
+  font-size: 0;
+  margin: 0 auto;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: row;
+
+  &__link {
+  position: relative;
+  margin: 0 6px;
+  width: 47px;
+  height: 47px;
+  font-size: 0;
+  line-height: 0;
+  background-color: white;
+  border: 2px solid #e9ebec;
+  border-radius: 50%;
+  }
+
+  &__link:hover {
+    border-color: #283645;
+    transition: 0.4s;
+  }
+
+  &__link:active {
+    opacity: 0.1;
+    transition: 0.1s;
+  }
+}
+
+@media(min-width:660px){
+  .price .icon-yes,
+  .price .icon-no {
+    display: block;
+    width: 31px;
+    margin: 0 auto;
+  }
+
+  .logo-pink-white-mobile {
+    display: none;
+  }
+
+  .logo-pink-white-tablet {
+    display: block;
+  }
+
+  .net-links{
+    width: auto;
+    margin-left: 68px;
+    margin-bottom: 0;
+  }
+}
+
+@media(min-width1200px){
+  .logo-pink-white-tablet,
+  .logo-pink-blue-mobile {
+    display: none;
+  }
+
+  .logo-pink-white-desktop,
+  .logo-pink-blue-desktop {
+    display: block;
+  }
+
+  .net-links{
+    margin-left: 228px;
+  }
+}
