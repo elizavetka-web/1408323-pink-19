@@ -7,14 +7,6 @@
   margin-top: 56px;
   }
 
-.radio{
-  padding-top: 36px;
-
-  &--first{
-    padding-top: 12px;
-  }
-  }
-
 .forma{
 
   display: flex;
@@ -26,6 +18,8 @@
     width: 280px;
     margin: 0 auto;
     padding: 28px 0 30px;
+
+
 
     &--color-wrapper{
       background-color: #f2f2f2;
@@ -61,6 +55,10 @@
       order: 3;
     }
 
+    &__submit{
+      order: 5;
+    }
+
   }
 
   &__require{
@@ -89,24 +87,55 @@
     border-radius: 3px;
     background-color: #2aab6d;
 
+    &:hover {
+      background-color: #1c9b5e;
+      border-color: #1c9b5e;
+      transition: 0.3s;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      transition: 0.1s;
+      outline: none;
+    }
   }
 
   &__header{
-    display: block;
-	  font-size: 14px;
-    line-height: 18px;
-    margin-bottom: 5px;
-    padding-left: 23px;
-    color: #d22856;
-    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
 
     &--intro{
+      display: block;
+
+      margin-bottom: 5px;
+      padding-left: 23px;
+
+      color: #d22856;
+
+      text-transform: uppercase;
+    }
+
+    &--choice{
+      display: inline-block;
+      vertical-align: middle;
+
+      position: relative;
+
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    &--title{
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #d22856;
       text-align: center;
       padding-left: 30px;
       padding-right: 30px;
 	    margin-bottom: 37px;
     	margin-top: 40px;
     }
+
   }
 }
 
@@ -127,6 +156,15 @@
   border-radius: 2px;
   padding: 14px 22px 15px;
   margin-bottom: 16px;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    border-color: #d22856;
+    outline: none;
+  }
 }
 
 h4{
@@ -161,12 +199,14 @@ h4{
 
       &--emotions{
         order: 4;
+        margin-top: 69px;
       }
 
       &--submit           {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        order: 5;
       }
 
       &--color-wrapper{
@@ -208,16 +248,21 @@ h4{
         margin-top: initial;
         display: block;
       }
+
+      &--title{
+        padding-right: 30px;
+        padding-left: 30px;
+      }
     }
 
-    &__item{
+    &__item--wrap{
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       margin-bottom: 52px;
     }
 
-    &__list{
+    &__item--down{
       display: flex;
       flex-direction:column;
       align-items: flex-start;
@@ -248,4 +293,14 @@ h4{
 		width: 500px;
 		height: 190px;
 	}
+}
+
+@media(min-width: 1200px){
+  .forma{
+    &__generous{
+      width: 940px;
+      margin: 0 auto;
+      padding: 28px 0 30px;
+    }
+  }
 }

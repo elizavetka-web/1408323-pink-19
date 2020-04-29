@@ -76,6 +76,14 @@
   z-index: 1000;
 }
 
+.icon-timer{
+ display: none;
+}
+
+.icon-editor-diagram{
+display: none;
+}
+
 
 .net-icon {
   position: absolute;
@@ -128,8 +136,63 @@
     transition: 0.1s;
   }
 }
+.quotes{
+  display: none;
+}
+
+.crop,
+.fill,
+.contrast {
+  fill: #283645;
+}
+
+.contrast {
+  position: absolute;
+  top: 6px;
+  left: 4px;
+}
 
 @media(min-width:660px){
+  .crop,
+  .fill,
+  .contrast {
+    fill: #d22856;
+  }
+
+  .crop {
+    width: 24px;
+    height: 24px;
+  }
+
+  .fill {
+    width: 26px;
+    height: 24px;
+  }
+
+  .contrast {
+    width: 16px;
+    height: 16px;
+
+    top: 0;
+    left: 0;
+  }
+  .icon-timer{
+    display: block;
+    position: absolute;
+    fill: #d22856;
+    left: -15px;
+    top: 60px;
+  }
+
+  .icon-editor-diagram{
+    position: absolute;
+    fill: #e9ebec;
+    display: block;
+    z-index: 100;
+    left: 22px;
+    top: 116px;
+  }
+
   .price .icon-yes,
   .price .icon-no {
     display: block;
@@ -152,7 +215,40 @@
   }
 }
 
-@media(min-width1200px){
+@media(min-width:1200px){
+  .crop {
+    width: 49px;
+    height: 48px;
+  }
+
+  .fill {
+    width: 49px;
+    height: 48px;
+  }
+
+  .contrast {
+    width: 32px;
+    height: 32px;
+  }
+  .icon-timer{
+    left: 9px;
+    top: 125px;
+  }
+
+  .icon-editor-diagram{
+    left: 47px;
+    top: 180px;
+  }
+  .quotes{
+    display: block;
+    position: relative;
+    height: 80px;
+    margin-left: 279px;
+    padding-bottom: 41px;
+    width: 63px;
+    fill: #bec2c7;
+  }
+
   .logo-pink-white-tablet,
   .logo-pink-blue-mobile {
     display: none;

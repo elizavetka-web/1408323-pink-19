@@ -1,13 +1,26 @@
 .price{
-  padding-top: 91 px;
+  padding-top: 14px;
   padding-bottom: 26px;
   background-color: #f2f2f2;
-  background-size: 101% auto;
-  background-position: 50% 0;
+  position: relative;
+
+  &::after{
+    content:'';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 100vw solid white;
+    border-bottom: 8vw solid transparent;
+  }
+
+
 
   &__wrapper{
     width: 100%;
     overflow: hidden;
+    position: relative;
   }
 
   &__base {
@@ -32,7 +45,9 @@
   }
 
   &__table{
+    margin-left: -123px;
     display: flex;
+    margin-top: 129px;
   }
 
   &__head{
@@ -83,15 +98,17 @@
   }
 
   &__cell{
-      padding-top: 16px;
-      padding-bottom: 13px;
-      padding-left: 22px;
-      font-size: 14px;
-      line-height: 30px;
-      text-transform: uppercase;
-      border-bottom: 2px solid #e5e5e5;
-      border-top: none;
-      background-color: white;
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 13px;
+    padding-left: 22px;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #e5e5e5;
+    border-top: none;
+    background-color: white;
   }
 
   &__nav{
@@ -124,6 +141,8 @@ ul{
   .price{
 
     &__wrapper{
+      padding-left: 20px;
+      padding-top: 108px;
       margin: 0 auto;
       width: 840px;
     }
@@ -131,6 +150,7 @@ ul{
     &__table{
       margin-left: 20px;
       position: relative;
+      margin: 0 auto;
     }
 
     &__empty{
@@ -183,6 +203,7 @@ ul{
 
 @media(min-width: 1200px){
   .price{
+    padding-top: 108px;
 
     &__wrapper{
       margin: 0 auto;
