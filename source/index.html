@@ -182,7 +182,7 @@
       <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
     </symbol>
     <symbol viewBox="22.5 69.048 253 253" id="icon-editor-diagram-fill">
-      <path fill="#231F20" d="M149,69.048c-69.864,0-126.5,56.636-126.5,126.5c0,69.864,56.636,126.5,126.5,126.5 s126.5-56.636,126.5-126.5C275.5,125.685,218.864,69.048,149,69.048z M149,306.264c-60.844,0-110.167-49.323-110.167-110.167 C38.833,135.253,88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167C259.167,256.941,209.843,306.264,149,306.264z"/>
+      <path fill="#cd2856" d="M149,69.048c-69.864,0-126.5,56.636-126.5,126.5c0,69.864,56.636,126.5,126.5,126.5 s126.5-56.636,126.5-126.5C275.5,125.685,218.864,69.048,149,69.048z M149,306.264c-60.844,0-110.167-49.323-110.167-110.167 C38.833,135.253,88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167C259.167,256.941,209.843,306.264,149,306.264z"/>
     </symbol>
   </svg>
   <header class="page-header page-header--index">
@@ -282,14 +282,32 @@
           <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-1" checked>
           <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-2">
           <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-3">
+
           <div class="reviews__item reviews__item--nikolay">
             <div class="reviews__inner-wrapper">
               <h4 class="reviews__title">Николай Петров</h4>
               <p class="reviews__intro">25 лет, водитель трамвая</p>
+            </div>
               <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </div>
           </div>
+
+          <div class="reviews__item reviews__item--vasya">
+            <div class="reviews__inner-wrapper">
+              <h4 class="reviews__title">Вася Николаев</h4>
+              <p class="reviews__intro">30 лет, прораб</p>
+            </div>
+            <p class="reviews__content">«Не следует, однако забывать, что рамки и место обучения кадров требуют определения и уточнения систем массового участия. Товарищи! консультация с широким активом позволяет оценить значение модели развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий.»</p>
+          </div>
+
+          <div class="reviews__item reviews__item--kolya">
+            <div class="reviews__inner-wrapper">
+              <h4 class="reviews__title">Коля Васечкин</h4>
+              <p class="reviews__intro">45 лет, смотритель музея</p>
+            </div>
+            <p class="reviews__content">«Талантливые же личности живут только тем, что творят, поэтому сами по себе неинтересны. Великий поэт — подлинно великий поэт — самое непоэтическое существо на свете. Но второразрядные поэты — люди просто обворожительные. Чем невыразительнее их поэзия, тем живописнее они выглядят. Если человек выпустил книжку плохих сонетов, можно заранее сказать, что он совершенно неотразим. Жизнь такого человека наполнена той поэзией, которую он не в состоянии выразить в своих стихах. А великие поэты изливают на бумаге ту поэзию, которую не осмеливаются вносить в свою жизнь»</p>
+          </div>
+
           <button class="reviews__toggle reviews__toggle--prev"><svg class="arrow" width="22" height="41"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left"></use></svg>предыдущий отзыв</button>
           <button class="reviews__toggle reviews__toggle--next"><svg class="arrow" width="22" height="41"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use></svg>следующий отзыв</button>
 
@@ -304,6 +322,9 @@
     <section class="price">
       <div class="price__wrapper">
         <div class="price__item">
+          <input class="price__switcher" type="radio" name="price" id="price-radio-1">
+          <input class="price__switcher" type="radio" name="price" id="price-radio-2"checked>
+          <input class="price__switcher" type="radio" name="price" id="price-radio-3">
           <div class="price__table">
             <ul class="price__empty">
               <li class="price__head price__head--empty"></li>
@@ -339,7 +360,7 @@
                 <svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg></li>
             </ul>
           </div>
-          <div class="slider-items price__nav">
+          <div class="slider-items slider-items--none price__nav">
             <label class="slider-items__btn" for="price-radio-1">1</label>
             <label class="slider-items__btn slider-items__btn--active" for="price-radio-2">2</label>
             <label class="slider-items__btn" for="price-radio-3">3</label>

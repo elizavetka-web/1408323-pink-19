@@ -104,35 +104,14 @@
   }
 
   &__footer {
+    display: flex;
+    flex-direction: row;
     position: relative;
-
     padding-left: 31px;
-
     font-size: 12px;
     line-height: 24px;
-
     color: #d22856;
-
     text-transform: uppercase;
-
-    &::after {
-      position: absolute;
-      content: "";
-
-      width: 14px;
-      height: 14px;
-
-      left: 0;
-      top: 4px;
-
-      background-image: url("../img/icon-heart.svg");
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-    }
-
-    &:hover {
-      cursor: pointer;
-    }
   }
 }
 
@@ -170,6 +149,7 @@
       padding-right: 29px;
 
       &--wrapper{
+        position: relative;
         display: flex;
         width: 620px;
         flex-wrap: wrap;
@@ -187,34 +167,17 @@
 
     &__counter-like{
       padding-right: 32px;
-
-      &::after{
-        position: absolute;
-        content: "";
-        width: 14px;
-        height: 14px;
-        right: 0;
-        top: 4px;
-        background-image: url(../img/icon-heart.svg);
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-      }
     }
 
     &__footer{
       margin-top: auto;
       padding-left: 0;
 
-      &::after {
-        position: static;
-        width: 0;
-        height: 0;
-        background-image: none;
-      }
-
       &--panoram{
         margin-top: 0;
         margin-left: auto;
+        position: absolute;
+        right: 28px;
       }
     }
   }

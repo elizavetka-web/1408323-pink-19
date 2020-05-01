@@ -42,9 +42,11 @@
 }
 .user-photo .heart{
   display: block;
+  margin-left: 91px;
   width: 14px;
   height: 14px;
-  margin-left: 20px;
+  margin-left: -114px;
+  margin-top: 4px;
 }
 
 .reviews__toggle--prev .arrow {
@@ -152,7 +154,20 @@ display: none;
   left: 4px;
 }
 
+.heart--panoram{
+  position: absolute;
+  left: 118px;
+}
+
 @media(min-width:660px){
+  .user-photo .heart{
+    display: block;
+    margin-left: 91px;
+    width: 14px;
+    height: 14px;
+    margin-left: 100px;
+    margin-top: 4px;
+  }
   .crop,
   .fill,
   .contrast {
@@ -179,7 +194,7 @@ display: none;
   .icon-timer{
     display: block;
     position: absolute;
-    fill: #d22856;
+    fill:  #dedede;
     left: -15px;
     top: 60px;
   }
@@ -212,6 +227,9 @@ display: none;
     width: auto;
     margin-left: 68px;
     margin-bottom: 0;
+  }
+  .heart--panoram{
+    left: 0px;
   }
 }
 
@@ -246,7 +264,7 @@ display: none;
     margin-left: 279px;
     padding-bottom: 41px;
     width: 63px;
-    fill: #bec2c7;
+    fill: #dedede;
   }
 
   .logo-pink-white-tablet,

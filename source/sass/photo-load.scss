@@ -2,7 +2,6 @@
   &__content-wrapper {
     width: 280px;
     margin: 0 auto;
-
   }
 
   &__img {
@@ -28,50 +27,48 @@
   &__content {
     font-size: 14px;
     line-height: 30px;
-
     text-align: center;
   }
 
   &__content:first-of-type {
     margin-top: 0;
-
     padding-top: 23px;
   }
 
   &__content:last-of-type {
     margin-bottom: 0;
-
     padding-bottom: 42px;
   }
 
   &__tools {
     font-size: 0;
     line-height: 0;
-
     text-align: center;
   }
 
   &__tools-list {
-    width: 280px;
-    margin: 0 auto;
-    flex-direction: row;
-    justify-content: space-between;
-    display: flex;
-    padding-top: 42px;
-    margin-bottom: 38px;
-
+    position: relative;
     padding-top: 42px;
     margin-bottom: 38px;
   }
 
   &__tool {
+    display: inline-block;
+    vertical-align: middle;
+
+    margin-right: 17px;
     margin-left: 17px;
+
     padding-bottom: 76px;
+
     width: 48px;
     height: 44px;
+
     font-size: 0;
     line-height: 0;
+
     border: 0;
+
     opacity: 0.3;
   }
 
@@ -201,22 +198,27 @@
     &__form-wrapper {
       width: 620px;
       margin: 0 auto;
+
       display: flex;
       justify-content: space-between;
+
       padding-top: 57px;
     }
 
     &__tools {
-      position: relative;
       display: flex;
       flex-wrap: wrap;
+
       flex-direction: column;
+
       min-height: 400px;
+
       background-size: cover;
     }
 
     &__tools-list {
       padding-top: 13px;
+
       margin-bottom: 0;
     }
 
@@ -295,8 +297,9 @@
     }
 
     &__form-wrapper {
-      background-color: #f2f2f2;
       width: 940px;
+      background-color: #f2f2f2;
+      justify-content: flex-start;
       padding-bottom: 57px;
     }
 
@@ -316,7 +319,6 @@
 
     &__tools {
       flex-direction: row;
-
       justify-content: flex-start;
       align-content: space-between;
     }
@@ -324,7 +326,6 @@
     &__tool {
       width: 48px;
       height: 44px;
-
       background-size: cover;
     }
 
@@ -341,20 +342,17 @@
     &__tool--contrast {
       width: 32px;
       height: 32px;
-
       top: 147px;
       left: 5px;
     }
 
     &__button {
       width: 183px;
-
       margin: 0;
     }
 
     &__button--submit {
       margin-right: 44px;
-
       padding-left: 42px;
       padding-right: 37px;
     }
