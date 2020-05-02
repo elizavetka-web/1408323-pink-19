@@ -404,9 +404,7 @@
         .forma__list-item {
           margin-top: 8px;
           margin-bottom: 13px;
-
           flex-grow: 1;
-
           &:first-child {
             margin-right: 35px;
           }
@@ -425,10 +423,7 @@
         .forma__list {
           display: flex;
           flex-wrap: wrap;
-
           flex-direction: row;
-
-
           justify-content: space-between;
           align-content: space-between;
 
