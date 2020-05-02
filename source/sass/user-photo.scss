@@ -115,7 +115,7 @@
 
     text-transform: uppercase;
 
-    &::before {
+    &::after {
       position: absolute;
       content: "";
 
@@ -183,12 +183,6 @@
 
     &__counter-like{
       padding-right: 32px;
-      &::before {
-        position: static;
-        width: 0;
-        height: 0;
-        background-image: none;
-      }
 
       &::after{
         position: absolute;
@@ -220,11 +214,38 @@
       }
     }
   }
+}
 
-  .lenta__wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 620px;
+@media(min-width:1200px){
+  .user-photo{
+    padding-bottom: 54px;
+
+    &__wrapper{
+      width: 940px;
+    }
+
+    &--day{
+      padding-bottom: 50px;
+    }
+
+    &__image{
+      width: 300px;
+      height: 400px;
+    }
+
+    &__evant{
+      top: 54px;
+    }
+
+    &__artical--wrapper{
+      width: 940px;
+    }
+
+    &__mobile-image{
+      width: 300px;
+      height: 400px;
+    }
   }
 }
+
+

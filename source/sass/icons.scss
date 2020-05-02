@@ -14,11 +14,9 @@
   display: none;
 }
 .price .icon-yes,
-  .price .icon-no {
-    display: block;
-    width: 31px;
-    margin-left: 60px;
-  }
+.price .icon-no {
+  display: none;
+}
 
 .price .icon-yes {
   fill: #3dc644;
@@ -37,16 +35,6 @@
   z-index: 10;
 }
 
-.heart{
-  fill: #d22856;
-}
-.user-photo .heart{
-  display: block;
-  width: 14px;
-  height: 14px;
-  margin-left: 20px;
-}
-
 .reviews__toggle--prev .arrow {
   left: 0;
 }
@@ -63,24 +51,42 @@
   opacity: 0.1;
 }
 
-.svg-triangle-decor {
-  position: relative;
-}
+.net-links {
+  padding-top: 3px;
+  margin: 0 auto;
+  margin-bottom: 36px;
 
-.bg-triangle-white-footer {
-  display: block;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: auto;
-  z-index: 1000;
-}
-
-
-.net-icon {
-  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
   fill: #d22856;
+
+  &__link{
+    position: relative;
+
+    margin: 0 6px;
+
+    width: 47px;
+    height: 47px;
+
+    font-size: 0;
+    line-height: 0;
+
+    background-color: white;
+
+    border: 2px solid #e9ebec;
+    border-radius: 50%;
+  }
+  &__link:hover {
+    border-color: #283645;
+    transition: 0.4s;
+  }
+
+  &__link:active {
+    opacity: 0.1;
+    transition: 0.1s;
+  }
 
   &--twitter {
     left: 16px;
@@ -95,37 +101,6 @@
   &--youtube {
     left: 17px;
     top: 16px;
-  }
-}
-
-.net-links {
-  padding-top: 3px;
-  font-size: 0;
-  margin: 0 auto;
-  margin-bottom: 36px;
-  display: flex;
-  flex-direction: row;
-
-  &__link {
-  position: relative;
-  margin: 0 6px;
-  width: 47px;
-  height: 47px;
-  font-size: 0;
-  line-height: 0;
-  background-color: white;
-  border: 2px solid #e9ebec;
-  border-radius: 50%;
-  }
-
-  &__link:hover {
-    border-color: #283645;
-    transition: 0.4s;
-  }
-
-  &__link:active {
-    opacity: 0.1;
-    transition: 0.1s;
   }
 }
 
@@ -144,12 +119,6 @@
   .logo-pink-white-tablet {
     display: block;
   }
-
-  .net-links{
-    width: auto;
-    margin-left: 68px;
-    margin-bottom: 0;
-  }
 }
 
 @media(min-width1200px){
@@ -163,7 +132,4 @@
     display: block;
   }
 
-  .net-links{
-    margin-left: 228px;
-  }
 }
