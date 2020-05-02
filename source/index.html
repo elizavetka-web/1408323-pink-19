@@ -171,6 +171,20 @@
     <symbol viewBox="0 0 60 60" id="logo-htmlacademy">
       <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
     </symbol>
+    <symbol viewBox="0 0 78.672 63.789" id="quotes">
+      <g>
+        <path d="M34.967,7.063L30.713,0C28.272,1.495,0,12.207,0,39.617c0,7.231,0.336,24.172,18.9,24.172 c11.187,0,13.94-10.279,13.94-13.584c0-21.977-21.382-14.177-21.382-14.177C11.458,17.957,31.263,9.184,34.967,7.063z"/>
+      </g>
+      <g>
+        <path d="M78.672,7.063L74.418,0c-2.44,1.495-30.713,12.207-30.713,39.617c0,7.231,0.337,24.172,18.9,24.172 c11.187,0,13.939-10.279,13.939-13.584c0-21.977-21.381-14.177-21.381-14.177C55.165,17.957,74.969,9.184,78.672,7.063z"/>
+      </g>
+    </symbol>
+    <symbol viewBox="0 0 298 345.097" id="icon-timer">
+      <path d="M264.568,102.055l5.355-5.355c7.717-7.717,9.124-18.938,3.126-24.935c-5.997-5.997-17.217-4.59-24.934,3.127l-5.386,5.385 C221.768,63.292,196.11,51.875,168,48.297v-9.583h7.658c10.914,0,19.843-8.711,19.843-19.357S186.573,0,175.659,0h-53.317  c-10.913,0-19.842,8.711-19.842,19.357s8.929,19.357,19.842,19.357H130v9.583C56.681,57.629,0,120.244,0,196.097  c0,82.291,66.709,149,149,149c82.29,0,149-66.709,149-149C298,160.434,285.465,127.703,264.568,102.055z M149,306.264 c-60.844,0-110.167-49.323-110.167-110.167S88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167  S209.843,306.264,149,306.264z"/>
+    </symbol>
+    <symbol viewBox="22.5 69.048 253 253" id="icon-editor-diagram-fill">
+      <path fill="#cd2856" d="M149,69.048c-69.864,0-126.5,56.636-126.5,126.5c0,69.864,56.636,126.5,126.5,126.5 s126.5-56.636,126.5-126.5C275.5,125.685,218.864,69.048,149,69.048z M149,306.264c-60.844,0-110.167-49.323-110.167-110.167 C38.833,135.253,88.156,85.93,149,85.93c60.843,0,110.167,49.323,110.167,110.167C259.167,256.941,209.843,306.264,149,306.264z"/>
+    </symbol>
   </svg>
   <header class="page-header page-header--index">
     <nav class="main-nav">
@@ -195,9 +209,9 @@
         </div>
       </div>
     </nav>
-    <div class="page-header__wrapper page-header__wrapper--main">
-      <h1 class="page-header__header">Взгляните на жизнь иначе</h1>
+    <div class="page-header__wrapper page-header__wrapper--index">
       <section class="board board--index">
+        <h1 class="page-header__header">Взгляните на жизнь иначе!</h1>
           <div class="board__wrapper board__wrapper--index">
             <h1 class="board__header board__header--index board__header--toggle">Взгляните на жизнь иначе!</h1>
             <section class="board__download">
@@ -219,8 +233,8 @@
 
   <main class="page-main">
     <section class="advantages">
-      <h2 class="advantages__slogan">Устали от серости мегаполиса?</h2>
-      <h2 class="advantages__slogan advantahes__slogan--second">Нам есть, что<br> предложить!</h2>
+      <h2 class="advantages__slogan">Устали от серости  мегаполиса?</h2>
+      <h2 class="advantages__slogan advantages__slogan--second">Нам есть, что вам предложить!</h2>
 		<div class="advantages__wrapper">
       <ul class="advantages__list">
         <li class="advantages__item">
@@ -246,7 +260,13 @@
 
      <div class="advantages__science-wrapper">
         <div class="advantages__science">
-          <h3 class="advantages__science-title">Эффект на 24 часа!</h3>
+          <svg class="icon-editor-diagram" width="204px" height="204px">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-editor-diagram-fill"></use>
+          </svg>
+          <svg class="icon-timer" width="278px" height="278px">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-timer"></use>
+          </svg>
+          <h3 class="advantages__science-title">Эффект <br>на 24 часа!</h3>
           <p class="advantages__science-text">Британские ученые провели исследования и доказали, что положительный эффект от
             использования приложения длится целые сутки!</p>
           <a class="advantages__link" href="#">Узнать больше об исследовании</a>
@@ -256,6 +276,9 @@
 
     <section class="reviews">
       <div class="reviews__wrapper">
+        <svg class="quotes" width="78.672px" height="63.789px">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#quotes"></use>
+        </svg>
         <div class="reviews__items">
           <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-1" checked>
           <input class="reviews__switcher" type="radio" name="reviews" id="reviews-radio-2">
@@ -264,10 +287,28 @@
             <div class="reviews__inner-wrapper">
               <h4 class="reviews__title">Николай Петров</h4>
               <p class="reviews__intro">25 лет, водитель трамвая</p>
+            </div>
               <p class="reviews__content">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </div>
           </div>
+
+          <div class="reviews__item reviews__item--vasya">
+            <div class="reviews__inner-wrapper">
+              <h4 class="reviews__title">Вася Николаев</h4>
+              <p class="reviews__intro">30 лет, прораб</p>
+            </div>
+            <p class="reviews__content">«Не следует, однако забывать, что рамки и место обучения кадров требуют определения и уточнения систем массового участия. Товарищи! консультация с широким активом позволяет оценить значение модели развития. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности обеспечивает широкому кругу (специалистов) участие в формировании существенных финансовых и административных условий.»</p>
+          </div>
+
+          <div class="reviews__item reviews__item--kolya">
+            <div class="reviews__inner-wrapper">
+              <h4 class="reviews__title">Коля Васечкин</h4>
+              <p class="reviews__intro">45 лет, смотритель музея</p>
+            </div>
+            <p class="reviews__content">«Талантливые же личности живут только тем, что творят, поэтому сами по себе неинтересны. Великий поэт — подлинно великий поэт — самое непоэтическое существо на свете. Но второразрядные поэты — люди просто обворожительные. Чем невыразительнее их поэзия, тем живописнее они выглядят. Если человек выпустил книжку плохих сонетов, можно заранее сказать, что он совершенно неотразим. Жизнь такого человека наполнена той поэзией, которую он не в состоянии выразить в своих стихах. А великие поэты изливают на бумаге ту поэзию, которую не осмеливаются вносить в свою жизнь»</p>
+          </div>
+
           <button class="reviews__toggle reviews__toggle--prev"><svg class="arrow" width="22" height="41"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-left"></use></svg>предыдущий отзыв</button>
           <button class="reviews__toggle reviews__toggle--next"><svg class="arrow" width="22" height="41"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-right"></use></svg>следующий отзыв</button>
 
@@ -282,6 +323,9 @@
     <section class="price">
       <div class="price__wrapper">
         <div class="price__item">
+          <input class="price__switcher" type="radio" name="price" id="price-radio-1">
+          <input class="price__switcher" type="radio" name="price" id="price-radio-2"checked>
+          <input class="price__switcher" type="radio" name="price" id="price-radio-3">
           <div class="price__table">
             <ul class="price__empty">
               <li class="price__head price__head--empty"></li>
@@ -291,33 +335,33 @@
             </ul>
             <ul class="price__base">
               <li class="price__head">База<p>1,99 USD</p></li>
-              <li class="price__cell price__cell--ok">
-                <svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg>Розовый фильтр</li>
-              <li class="price__cell price__cell--no">
-                <svg class="icon-no" width="27" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use></svg>Смайлики</li>
-              <li class="price__cell price__cell--no">
-                <svg class="icon-no" width="27" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use></svg>Комментарии</li>
+              <li class="price__cell price__cell--ok">Розовый фильтр
+                <svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg></li>
+              <li class="price__cell price__cell--no">Смайлики  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <svg class="icon-no" width="27" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use></svg></li>
+              <li class="price__cell price__cell--no">Комментарии &nbsp;&nbsp;&nbsp;&nbsp;
+                <svg class="icon-no" width="27" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-no"></use></svg></li>
             </ul>
             <ul class="price__standart">
               <li class="price__head price__head--hit">Стандарт<p>3,99 USD</p></li>
-              <li class="price__cell price__cell--ok">
-                <svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg>Розовый фильтр</li>
-              <li class="price__cell price__cell--ok">
-                <svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg>Смайлики</li>
-              <li class="price__cell price__cell--ok">
-                <svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg>Комментарии</li>
+              <li class="price__cell price__cell--ok">Розовый фильтр
+                <svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg></li>
+              <li class="price__cell price__cell--ok">Смайлики  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg></li>
+              <li class="price__cell price__cell--ok">Комментарии &nbsp;&nbsp;&nbsp;&nbsp;
+                <svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg></li>
             </ul>
             <ul class="price__anlim">
               <li class="price__head">Анлим<p>9,99 USD</p></li>
-              <li class="price__cell price__cell--ok">
-                <svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg>Розовый фильтр</li>
-              <li class="price__cell price__cell--ok">
-                <svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg>Смайлики</li>
-              <li class="price__cell price__cell--ok">
-                <svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg>комментарии</li>
+              <li class="price__cell price__cell--ok">Розовый фильтр
+                <svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg></li>
+              <li class="price__cell price__cell--ok">Смайлики &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg></li>
+              <li class="price__cell price__cell--ok">Комментарии &nbsp;&nbsp;&nbsp;&nbsp;
+                <svg class="icon-yes" width="31" height="21"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-yes"></use></svg></li>
             </ul>
           </div>
-          <div class="slider-items price__nav">
+          <div class="slider-items slider-items--none price__nav">
             <label class="slider-items__btn" for="price-radio-1">1</label>
             <label class="slider-items__btn slider-items__btn--active" for="price-radio-2">2</label>
             <label class="slider-items__btn" for="price-radio-3">3</label>
@@ -329,7 +373,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <section class="page-footer__contacts">
-        <h2 class="page-footer__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <h2 class="page-footer__title">Остались вопросы?<br> Свяжитесь с нами!</h2>
         <div class="page-footer__call-us">
           <h4 class="page-footer__action">Звоните:</h4>
           <p class="page-footer__info">+7 (812) 555-66-66</p>
@@ -347,31 +391,37 @@
       </section>
     </div>
 
-    <div class="page-footer__map"></div>
-    <section class="page-footer__links--visual">
+    <div class="svg-triangle-decor">
+      <svg class="bg-triangle-white-footer" version="1.0" id="bg-triangle-white-footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve"> <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "/></svg>
+      <div id="map" class="page-footer__map">
+         карта
+      </div>
+    </div>
+
+    <section class="page-footer__links page-footer__links--visual">
       <a class="logo logo--big logo--footer" href="#">
         <svg class="logo-pink-blue-mobile" width="148" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-mobile"></use></svg>
         <svg class="logo-pink-blue-desktop" width="148" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-pink-blue-desktop"></use></svg>Лого
       </a>
       <div class="net-links">
-        <a class="net-links net-links--twitter">
-          <svg class="net-links net-links--twitter" width="18" height="15"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg>
+        <a class="net-links__link net-links__link--twitter">
+          <svg class="net-icon net-icon--twitter" width="18" height="15"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use></svg>
         </a>
-        <a class="net-links net-links--facebook">
-          <svg class="net-links net-links--facebook" width="9" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg>
+        <a class="net-links__link net-links__link--facebook">
+          <svg class="net-icon net-icon--facebook" width="9" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-facebook"></use></svg>
         </a>
-        <a class="net-links net-links--youtube">
-          <svg class="social-icon social-icon--youtube" width="15" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use></svg>
+        <a class="net-links__link net-links__link--youtube">
+          <svg class="net-icon net-icon--youtube" width="15" height="14"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-youtube"></use></svg>
         </a>
       </div>
       <div class="page-footer__developer">
-        <a class="page-footer__developer-link">
+        <a class="page-footer__developer-link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="logo-htmlacademy" width="42" height="49"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-htmlacademy"></use></svg>
           Разработано</a>
       </div>
     </section>
   </footer>
 
-  <script src="./js/nav.js"></script>
+ <script src="./js/nav.js"></script>
 </body>
 </html>
