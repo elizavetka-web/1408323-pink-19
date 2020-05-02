@@ -1,39 +1,4 @@
 
-.form-btn {
-  overflow: hidden;
-
-  min-width: 280px;
-
-  padding-top: 15px;
-  padding-bottom: 17px;
-  padding-left: 25px;
-  padding-right: 25px;
-
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-
-  text-transform: uppercase;
-  color: white;
-
-  background-color: #2aab6d;
-  border: none;
-  border-radius: 3px;
-  outline: none;
-
-  &:hover {
-    background-color: #1c9b5e;
-    border-color: #1c9b5e;
-    transition: 0.3s;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-    transition: 0.1s;
-    outline: none;
-  }
-}
-
 .text,
 .tel,
 .email {
@@ -81,6 +46,12 @@
     color: #d22856;
 
     text-transform: uppercase;
+  }
+
+  label.required:after{
+    color: #d22856;
+    content: "*";
+
   }
 
   &--checkbox,

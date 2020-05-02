@@ -102,16 +102,10 @@
     height: 200px;
 
     background-color: #f2f2f2;
-    background-image: url(../img/bg-triangle-white-footer.svg),
-                      url(../img/bg-map-mobile@1x.png);
-
+    background-image: url(../img/bg-map-mobile@1x.png);
     background-repeat: no-repeat;
-
-    background-size: 100% auto,
-                     320px auto;
-
-    background-position: 50% 0,
-                         50% 0;
+    background-size: 100% auto;
+    background-position: 50% 0;
     font-size: 0;
     line-height: 0;
   }
@@ -200,7 +194,7 @@
       height: 377px;
       background-image: url(../img/bg-map-tablet@1x.jpg);
       background-repeat: no-repeat,
-                         repeat;
+
     }
   }
 }
