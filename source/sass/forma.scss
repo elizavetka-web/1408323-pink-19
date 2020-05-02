@@ -175,7 +175,6 @@
       border-color: #e5e5e5;
       color: white;
     }
-
   }
 }
 
@@ -311,11 +310,6 @@
         padding-bottom: 51px;
         order: 0;
       }
-
-      &--title{
-        padding-right: 30px;
-        padding-left: 30px;
-      }
     }
 
     &__submit {
@@ -404,7 +398,9 @@
         .forma__list-item {
           margin-top: 8px;
           margin-bottom: 13px;
+
           flex-grow: 1;
+
           &:first-child {
             margin-right: 35px;
           }
@@ -423,7 +419,10 @@
         .forma__list {
           display: flex;
           flex-wrap: wrap;
+
           flex-direction: row;
+
+
           justify-content: space-between;
           align-content: space-between;
 
@@ -471,16 +470,6 @@
       &--achievements {
         width: 100%;
       }
-    }
-  }
-}
-
-@media(min-width: 1200px){
-  .forma{
-    &__generous{
-      width: 940px;
-      margin: 0 auto;
-      padding: 28px 0 30px;
     }
   }
 }
