@@ -14,10 +14,24 @@
   }
 
   &__item {
+    position: absolute;
     text-align: center;
     top: 0;
     left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition-property: opacity;
+    transition: 0.2s ease-out;
   }
+
+  &__nav {
+    position: absolute;
+    bottom: 0;
+
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
 
   &__switcher{
     display: none;
@@ -32,18 +46,32 @@
     font-size: 14px;
     line-height: 30px;
     margin-top: 12px;
-    margin-bottom: 13px
-  }
-
-  &__nav{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-bottom: 68px
   }
 
   &__toggle {
     display: none;
+  }
+
+  &__intro{
+    display: none;
+  }
+
+  #reviews-radio-1:checked ~ .reviews__item--nikolay,
+  #reviews-radio-2:checked ~ .reviews__item--vasya,
+  #reviews-radio-3:checked ~ .reviews__item--kolya {
+    position: static;
+    padding-bottom: 30px;
+
+    visibility: visible;
+    opacity: 1;
+  }
+
+  #reviews-radio-1:checked ~ .reviews__nav label[for="reviews-radio-1"],
+  #reviews-radio-2:checked ~ .reviews__nav label[for="reviews-radio-2"],
+  #reviews-radio-3:checked ~ .reviews__nav label[for="reviews-radio-3"] {
+    background-color: white;
+    border: 3px solid #283645;
   }
 }
 
@@ -55,27 +83,50 @@
       width: 620px;
     }
 
+    &__inner-wrapper{
+      order: 2;
+    }
+
     &__item{
       text-align: center;
       display: flex;
       flex-direction: column;
+      visibility: hidden;
+      opacity: 0;
     }
 
     &__content{
       font-size: 18px;
       order: 0;
+      margin-bottom: 40px;
     }
 
     &__title{
       margin-top: 22px;
-      margin-bottom: 18px;
-      order: 1;
+      margin-bottom: 15px;
+
     }
 
     &__intro {
+      display: block;
       margin-top: 0px;;
       font-size: 14px;
-      order: 2;
+    }
+    #reviews-radio-1:checked ~ .reviews__item--nikolay,
+    #reviews-radio-2:checked ~ .reviews__item--vasya,
+    #reviews-radio-3:checked ~ .reviews__item--kolya {
+      display: flex;
+      flex-direction: column;
+
+      visibility: visible;
+      opacity: 1;
+    }
+
+    #reviews-radio-1:checked ~ .reviews__nav label[for="reviews-radio-1"],
+    #reviews-radio-2:checked ~ .reviews__nav label[for="reviews-radio-2"],
+    #reviews-radio-3:checked ~ .reviews__nav label[for="reviews-radio-3"] {
+      background-color: white;
+      border: 3px solid #283645;
     }
   }
 }
@@ -85,21 +136,14 @@
     padding-bottom: 14px;
 
     &__wrapper {
-      padding-top: 105px;
-
       padding-bottom: 8px;
-
-      background-image: url(../img/icon-quotes.svg);
-      background-size: 80px 63px;
-      background-repeat: no-repeat;
-      background-position: 50% 5px;
     }
 
     &__content {
       padding: 0 95px;
     }
 
-    &__item {
+    &__items {
       position: relative;
     }
 
@@ -153,5 +197,6 @@
         right: 0;
       }
     }
+
   }
 }

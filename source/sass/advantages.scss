@@ -8,17 +8,19 @@
   font-weight: lighter;
   text-align: center;
   padding: 0;
-  margin: 0 0 28px;
+  margin: 0 auto;
+  margin-bottom: 46px;
+  width: 200px;
 
   &--second{
-    width: 408px;
+    width: 200px;
     margin: 0 auto;
   }
 }
 
 &__wrapper {
   position: relative;
-  padding-top: 81px;
+  padding-top: 53px;
   background-color: #f2f2f2;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -91,15 +93,21 @@
 }
 
 @media(min-width: 660px){
+  br{
+    display: none;
+  }
   .advantages{
     &__slogan{
       margin-bottom: 0;
       padding: 0;
       font-size: 40px;
       line-height: 48px;
+      width: 620px;
 
       &--second{
-        margin-bottom: 40px;
+        width: 408px;
+        margin: 0 auto;
+        margin-bottom: 50px;
       }
     }
 
@@ -150,13 +158,9 @@
       min-height: 183px;
       width: 320px;
       margin: 0 auto;
-      padding-top: 96px;
+      padding-top: 76px;
       padding-left: 315px;
       padding-bottom: 110px;
-      background-image: url(../img/icon-editor-diagram-fill.svg),url(../img/icon-timer.svg);
-      background-repeat: no-repeat;
-      background-position: 23px 115px,5px 59px;
-      background-size: 204px 204px,241px 278px;
 
       &::before {
         position: absolute;
@@ -176,7 +180,7 @@
         line-height: 96px;
         font-weight: 700;
         color: #d22856;
-        top: 162px;
+        top: 165px;
         left: 68px;
       }
     }
@@ -185,7 +189,7 @@
       font-size: 30px;
       line-height: 36px;
       margin-bottom: 10px;
-      width: 168px;
+      width: 175px;
       display: block;
     }
 
@@ -206,6 +210,8 @@
 
 
   @media(min-width: 1200px){
+
+
     .advantages {
       padding-top: 67px;
       padding-bottom: 67px;
@@ -213,6 +219,11 @@
       &__slogan {
         font-size: 50px;
         line-height: 60px;
+        width: 940px;
+
+        &--second{
+          width: 620px;
+        }
       }
 
       &__wrapper {
@@ -234,11 +245,12 @@
           width: 0;
           height: 0;
           border-left:100vw solid white;
-          border-bottom: 12vw solid transparent;
+          border-bottom: 8vw solid transparent;
         }
       }
 
       &__list {
+        margin-top: 56px;
         width: 940px;
         display: flex;
         justify-content: space-between;
@@ -247,9 +259,12 @@
       }
 
       &__item {
+        margin-top: 5px;
         text-align: center;
         flex-basis: 300px;
         margin-left: 0;
+        display: block;
+        z-index: 10;
       }
 
        &__title {
@@ -263,27 +278,28 @@
         display: block;
         width: 100%;
         height: 301px;
+        z-index: 10;
 
-        &__item-image--gray {
+        &--gray{
           background-image: url(../img/iphone-screen-1-desktop@1x.png);
           background-repeat: no-repeat;
           background-position: 50% 50%;
           background-size: 292px auto;
         }
 
-        &__item-image--pink {
+        &--pink{
           background-image: url(../img/iphone-screen-2-desktop@1x.png);
           background-repeat: no-repeat;
           background-position: 50% 50%;
           background-size: 292px auto;
         }
 
-        &__item-image--smile {
+        &--smile{
           background-image: url(../img/iphone-screen-3-desktop@1x.png);
           background-repeat: no-repeat;
           background-position: 50% 50%;
           background-size: 292px auto;
-      }
+        }
     }
 
       &__description {
@@ -315,7 +331,7 @@
           height: 220px;
 
           left: 39px;
-          top: 151px;
+          top: 182px;
         }
 
         &::after {
@@ -323,7 +339,7 @@
           line-height: 120px;
 
           left: 80px;
-          top: 196px;
+          top: 212px;
         }
       }
 

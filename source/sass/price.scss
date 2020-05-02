@@ -1,5 +1,5 @@
 .price{
-  padding-top: 91px;
+  padding-top: 14px;
   padding-bottom: 26px;
   background-color: #f2f2f2;
   position: relative;
@@ -12,10 +12,8 @@
     width: 0;
     height: 0;
     border-left: 100vw solid white;
-    border-bottom: 6vw solid transparent;
+    border-bottom: 8vw solid transparent;
   }
-
-
 
   &__wrapper{
     width: 100%;
@@ -40,11 +38,12 @@
     display: none;
   }
 
-  &__swither{
+  &__switcher{
     display: none;
   }
 
   &__table{
+    margin-left: -123px;
     display: flex;
     margin-top: 129px;
   }
@@ -135,13 +134,38 @@ ul{
 	margin-left: 0;
     padding-left: 0;
 }
+@media (max-width:659px){
+  #price-radio-1:checked ~ .price__table {
+    transform: translateX(280px);
+    transition: 0.5s;
+  }
+
+  #price-radio-2:checked ~ .price__table {
+    transform: translateX(0px);
+    transition: 0.5s;
+  }
+
+  #price-radio-3:checked ~ .price__table {
+    transform: translateX(-280px);
+    transition: 0.5s;
+  }
+
+  #price-radio-1:checked ~ .price__nav label[for="price-radio-1"],
+  #price-radio-2:checked ~ .price__nav label[for="price-radio-2"],
+  #price-radio-3:checked ~ .price__nav label[for="price-radio-3"] {
+    background-color: white;
+    border: 3px solid #283645;
+  }
+}
 
 @media(min-width: 660px){
   .price{
 
     &__wrapper{
+      padding-left: 20px;
+      padding-top: 108px;
       margin: 0 auto;
-      width: 840px;
+      width: 675px;
     }
 
     &__table{
@@ -200,10 +224,12 @@ ul{
 
 @media(min-width: 1200px){
   .price{
+    padding-top: 108px;
 
     &__wrapper{
       margin: 0 auto;
       width: 940px;
+      padding-top: 51px;
 
     }
 
