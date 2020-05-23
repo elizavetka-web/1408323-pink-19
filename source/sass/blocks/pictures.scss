@@ -1,58 +1,52 @@
-.lenta{
-  &__slogan-wrapper{
+  .pictures__slogan-wrapper{
     width: 280px;
     margin: 0 auto;
     padding-top: 45px;
     padding-bottom: 49px;
   }
 
-  &__slogan{
+  .pictures__slogan{
     font-size: 14px;
     line-height: 30px;
     text-align: center;
   }
 
-  &__wrapper{
+  .pictures__wrapper{
     width: 280px;
     margin: 0 auto;
   }
-}
 
 @media(min-width:660px){
-  .lenta{
-    &__wrapper{
+  .pictures__wrapper{
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       width: 620px;
     }
 
-    &__slogan-wrapper{
+    .pictures__slogan-wrapper{
       width: 620px;
     }
 
-    &__slogan{
+    .pictures__slogan{
       width: 438px;
       margin-left: 85px;
     }
   }
 
-}
-
 @media(min-width:1200px){
-  .lenta{
 
-    &__slogan-wrapper{
+  .pictures__slogan-wrapper{
       width: 940px;
     }
 
-    &__wrapper{
+    .pictures__wrapper{
       width: 940px;
       align-content: space-between;
     }
 
-    &__slogan{
+    .pictures__slogan{
       margin-left: 262px;
     }
   }
-}
+

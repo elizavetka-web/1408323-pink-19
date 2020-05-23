@@ -13,8 +13,9 @@
   &.price__nav{
     margin-top: 20px;
   }
+}
 
-  &__btn{
+.slider-items__btn{
     display: inline-block;
     vertical-align: middle;
     font-size: 0;
@@ -34,7 +35,6 @@
       opacity: 0.3;
     }
   }
-}
 
 @media(min-width: 660px){
   .slider-items{

@@ -6,19 +6,20 @@
   &--day{
     position: relative;
   }
+}
 
-  &__image{
+.user-photo__image{
     width: 280px;
     height: 180px;
   }
 
-  &__mobile-image{
+  .user-photo__mobile-image{
     display: block;
     width: 280px;
     height: 180px;
   }
 
-  &__panoram {
+  .user-photo__panoram {
     display: block;
 
     width: 100%;
@@ -26,7 +27,7 @@
     background-color: #e5e5e5;
   }
 
-  &__evant{
+  .user-photo__evant{
     position: absolute;
     padding: 7px 23px 6px;
     right: 0;
@@ -38,18 +39,18 @@
     background-color: #d22856;
   }
 
-  &__evant-wrapper{
+  .user-photo__evant-wrapper{
     position: relative;
     width: 280px;
     margin: 0 auto;
   }
 
-  &__mobile-panoram{
+  .user-photo__mobile-panoram{
     display: block;
     width: 100%;
   }
 
-  &__artical--wrapper {
+  .user-photo__artical--wrapper {
     width: 280px;
     margin: 0 auto;
 
@@ -58,7 +59,7 @@
     background-color: #f2f2f2;
   }
 
-  &__artical{
+  .user-photo__artical{
     padding-top: 18px;
     padding-bottom: 20px;
     padding-left: 19px;
@@ -68,7 +69,7 @@
     background-color: #f2f2f2;
   }
 
-  &__title {
+  .user-photo__title {
     margin-top: 0;
     margin-bottom: 0;
 
@@ -89,7 +90,7 @@
     }
   }
 
-  &__content {
+  .user-photo__content {
     margin-top: 0;
     margin-bottom: 9px;
 
@@ -97,13 +98,13 @@
     line-height: 24px;
   }
 
-  &__artical{
+  .user-photo__artical{
     box-sizing: border-box;
 
     background-color: #f2f2f2;
   }
 
-  &__footer {
+  .user-photo__footer {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -113,33 +114,32 @@
     color: #d22856;
     text-transform: uppercase;
   }
-}
 
 @media(min-width: 660px){
   .user-photo{
     flex-basis: 300px;
-
-    &__mobile-image{
-      width: 300px;
-      height: 300px;
-    }
-
     &--day{
       padding-bottom: 53px;
     }
+  }
 
-    &__evant-wrapper{
-      width: 620px;
-    }
-    &__evant{
-      top: 57px;
-    }
-
-    &__image{
+  .user-photo__mobile-image{
       width: 300px;
       height: 300px;
     }
-    &__artical{
+
+    .user-photo__evant-wrapper{
+      width: 620px;
+    }
+    .user-photo__evant{
+      top: 57px;
+    }
+
+    .user-photo__image{
+      width: 300px;
+      height: 300px;
+    }
+    .user-photo__artical{
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -160,16 +160,16 @@
         align-content: flex-start;
       }
 
-      &__ artical--wrapper .user-photo__content {
+      .user-photo__artical--wrapper .user-photo__content {
         order: 1;
       }
     }
 
-    &__counter-like{
+    .user-photo__counter-like{
       padding-right: 32px;
     }
 
-    &__footer{
+    .user-photo__footer{
       margin-top: auto;
       padding-left: 0;
 
@@ -181,38 +181,37 @@
       }
     }
   }
-}
 
 @media(min-width:1200px){
   .user-photo{
     padding-bottom: 54px;
 
-    &__wrapper{
-      width: 940px;
-    }
-
     &--day{
       padding-bottom: 50px;
     }
+  }
 
-    &__image{
+  .user-photo__wrapper{
+      width: 940px;
+    }
+
+    .user-photo__image{
       width: 300px;
       height: 400px;
     }
 
-    &__evant{
+    .user-photo__evant{
       top: 54px;
     }
 
-    &__artical--wrapper{
+    .user-photo__artical--wrapper{
       width: 940px;
     }
 
-    &__mobile-image{
+    .user-photo__mobile-image{
       width: 300px;
       height: 400px;
     }
   }
-}
 
 

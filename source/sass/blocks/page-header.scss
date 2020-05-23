@@ -6,16 +6,25 @@
 
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-size: 700px auto;
-  background-position: 50% 12%;
+  background-position: 50% 0%;
   background-repeat: no-repeat;
   background-color: #1d2631;
 
   &--index {
     min-height: 729px;
     background-position: 50% 0;
-  }
 
-  &__wrapper {
+    @media
+    (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+      background-image: url(../img/bg-back-mobile@2x.jpg);
+      background-size: 700px auto;
+      background-position: 50% 0
+    }
+  }
+}
+
+.page-header__wrapper {
     &::after {
       content: "";
       display: table;
@@ -24,7 +33,7 @@
     position: relative;
     }
 
-    &__wrapper--index{
+    .page-header__wrapper--index{
       padding-top: 455px;
     }
 
@@ -33,7 +42,7 @@
     }
 
 
-  &__header{
+    .page-header__header{
     top: 38px;
     left: 158px;
     position: absolute;
@@ -43,7 +52,6 @@
     line-height: 29px;
     width: 280px;
   }
-}
 
 @media (min-width: 660px) {
   .page-header {
@@ -53,19 +61,35 @@
     background-size: 1200px auto;
     background-position: 50% 0;
 
+    @media
+    (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+      background-image: url(../img/bg-back-tablet@2x.jpg);
+      background-size: 1400px auto;
+    }
+
     &--index {
       min-height: 729px;
-      }
+      background-size: 1200px auto;
+      background-position: 50% 0;
 
-    &__wrapper {
+      @media
+        (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx) {
+          background-image: url(../img/bg-back-tablet@2x.jpg);
+          background-size: 1400px auto;
+        }
+      }
+  }
+
+  .page-header__wrapper {
       padding-top: 0;
     }
 
-    &__header{
+    .page-header__header{
       display: none;
     }
   }
-}
 
 @media (min-width: 1200px) {
   .page-header {
@@ -75,15 +99,28 @@
     background-size: 2560px auto;
     background-position: 50% 0;
 
+
+
     &--index {
       min-height: 729px;
-      }
+      background-image: url(../img/bg-back-desktop@1x.jpg);
+      background-size: 2560px auto;
+      background-position: 50% 0;
 
-    &__wrapper {
+      @media
+        (min-resolution: 144dpi),
+        (min-resolution: 1.5dppx) {
+          background-image: url(../img/bg-back-desktop@2x.jpg);
+          background-size: 2560px auto;
+        }
+    }
+  }
+
+  .page-header__wrapper {
       padding-top: 0;
     }
 
-    &__nav-wrapper {
+    .page-header__nav-wrapper {
       &::after {
         content: "";
         display: table;
@@ -91,8 +128,8 @@
       }
     }
 
-    &__nav-toggle {
+    .page-header__nav-toggle {
       display: none;
     }
   }
-}
+

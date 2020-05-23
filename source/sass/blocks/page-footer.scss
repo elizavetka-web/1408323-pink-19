@@ -1,25 +1,26 @@
 .page-footer{
   position: relative;
   padding-top: 41px;
+}
 
-  &__wrapper{
+.page-footer__wrapper{
     width: 280px;
     margin: 0 auto;
   }
 
-  &__contacts{
+  .page-footer__contacts{
     text-align: center;
 	  padding-bottom: 41px;
   }
 
-  &__title{
+  .page-footer__title{
     margin-bottom: 35px;
     font-size: 24px;
     line-height: 30px;
     font-weight: lighter;
   }
 
-  &__action{
+  .page-footer__action{
     font-weight: bold;
     margin-top: 25px;
     margin-bottom: 3px;
@@ -27,7 +28,7 @@
     line-height: 21px;
   }
 
-  &__info, &__mail{
+  .page-footer__info, .page-footer__mail{
     margin-top: 0;
     margin-bottom: 25px;
     color: #d22856;
@@ -35,25 +36,30 @@
     line-height: 29px;
   }
 
-  &__mail{
+  .page-footer__mail{
     text-decoration: none;
  }
 
- &__mail:hover {
+ .page-footer__mail:hover {
    color: #283645;
    text-decoration: underline;
 }
 
-&__mail:active {
+.page-footer__mail:active {
   color: rgba(40, 54, 69, 0.3);
   text-decoration: none;
 }
 
-&__call-us,&__write-us,&__visit-us {
+.page-footer__call-us,.page-footer__write-us,.page-footer__visit-us {
    margin-bottom: 23px;
 }
 
-&__links{
+.page-footer__map{
+  height: 200px;
+  background-color: #f2f2f2;
+}
+
+.page-footer__links{
 
   width: 280px;
   margin: 0 auto;
@@ -67,11 +73,11 @@
   }
 }
 
-&__developer{
+.page-footer__developer{
   position: relative;
 }
 
-&__developer-link{
+.page-footer__developer-link{
   font-size: 14px;
     line-height: 18px;
 
@@ -98,34 +104,22 @@
     }
   }
 
-  &__map {
-    height: 200px;
-
-    background-color: #f2f2f2;
-    background-image: url(../img/bg-map-mobile@1x.png);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: 50% 0;
-    font-size: 0;
-    line-height: 0;
-  }
-}
-
 @media(min-width: 660px){
   .page-footer{
     padding-top: 46px;
+  }
 
-    &__wrapper{
+  .page-footer__wrapper{
       width: 620px;
     }
 
-    &__contacts{
+    .page-footer__contacts{
       padding-bottom: 26px;
       display: flex;
       flex-wrap: wrap;
     }
 
-    &__title{
+    .page-footer__title{
       width: 400px;
       margin-left: auto;
       margin-right: auto;
@@ -134,33 +128,37 @@
       margin-bottom: 45px;
     }
 
-    &__call-us{
+    .page-footer__call-us{
       margin-bottom: 47px;
       width: 300px;
       float: left;
     }
 
-    &__write-us{
+    .page-footer__write-us{
       margin-bottom: 47px;
       width: 300px;
       float: right;
     }
 
-    &__visit-us{
+    .page-footer__visit-us{
       width: 320px;
       margin-left: auto;
       margin-right: auto;
     }
 
-    &__action{
+    .page-footer__action{
       margin-bottom: 10px;
     }
 
-    &__info{
+    .page-footer__info{
       line-height: 30px;
     }
 
-    &__links{
+    .page-footer__map{
+      height: 377px;
+    }
+
+    .page-footer__links{
       width: 620px;
       display: flex;
       flex-direction: row;
@@ -174,13 +172,13 @@
       background-color: white;
     }
 
-    &__developer {
+    .page-footer__developer {
       padding-top: 12px;
 
       text-align: left;
     }
 
-    &__developer-link{
+    .page-footer__developer-link{
       font-size: 14px;
       line-height: 18px;
 
@@ -189,57 +187,49 @@
         top: 8px;
       }
     }
-
-    &__map {
-      height: 377px;
-      background-image: url(../img/bg-map-tablet@1x.jpg);
-      background-repeat: no-repeat,
-
-    }
   }
-}
 
 @media(min-width:1200px){
   .page-footer{
     padding-top: 63px;;
+  }
 
-    &__wrapper{
+  .page-footer__wrapper{
       width: 940px;
     }
 
-    &__title{
+    .page-footer__title{
       width: 940px;
       padding-left: 180px;
       padding-right: 180px;
     }
 
-    &__call-us{
+    .page-footer__call-us{
       order: 1;
     }
 
-    &__write-us{
+    .page-footer__write-us{
       order: 3;
     }
 
-    &__visit-us{
+    .page-footer__visit-us{
       order: 2;
     }
 
-    &__links{
+    .page-footer__map{
+      height: 501px;
+    }
+
+    .page-footer__links{
       width: 940px;
       padding-top: 70px;
       padding-bottom: 72px;
     }
 
-    &__map {
-      height: 501px;
-      background-image: url(../img/bg-map-desktop@1x.jpg);
-    }
-
-    &__developer-link{
+    .page-footer__developer-link{
       padding-right: 45px;
       font-size: 18px;
     }
   }
-}
+
 
