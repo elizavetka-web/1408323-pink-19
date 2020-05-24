@@ -14,9 +14,11 @@
   display: none;
 }
 .price .icon-yes,
-.price .icon-no {
-  display: none;
-}
+  .price .icon-no {
+    display: block;
+    width: 31px;
+    margin-left: 60px;
+  }
 
 .price .icon-yes {
   fill: #3dc644;
@@ -35,6 +37,18 @@
   z-index: 10;
 }
 
+.heart{
+  fill: #d22856;
+}
+.user-photo .heart{
+  display: block;
+  margin-left: 91px;
+  width: 14px;
+  height: 14px;
+  margin-left: -114px;
+  margin-top: 4px;
+}
+
 .reviews__toggle--prev .arrow {
   left: 0;
 }
@@ -51,42 +65,32 @@
   opacity: 0.1;
 }
 
-.net-links {
-  padding-top: 3px;
-  margin: 0 auto;
-  margin-bottom: 36px;
+.svg-triangle-decor {
+  position: relative;
+}
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.bg-triangle-white-footer {
+  display: block;
+  position: absolute;
+  top: -1px;
+  width: 100%;
+  height: auto;
+  z-index: 1000;
+}
+
+.icon-timer{
+ display: none;
+}
+
+.icon-editor-diagram{
+display: none;
+}
+
+
+.net-icon {
+  position: absolute;
 
   fill: #d22856;
-
-  &__link{
-    position: relative;
-
-    margin: 0 6px;
-
-    width: 47px;
-    height: 47px;
-
-    font-size: 0;
-    line-height: 0;
-
-    background-color: white;
-
-    border: 2px solid #e9ebec;
-    border-radius: 50%;
-  }
-  &__link:hover {
-    border-color: #283645;
-    transition: 0.4s;
-  }
-
-  &__link:active {
-    opacity: 0.1;
-    transition: 0.1s;
-  }
 
   &--twitter {
     left: 16px;
@@ -104,7 +108,106 @@
   }
 }
 
+.net-links {
+  padding-top: 3px;
+  font-size: 0;
+  margin: 0 auto;
+  margin-bottom: 36px;
+  display: flex;
+  flex-direction: row;
+
+  &__link {
+  position: relative;
+  margin: 0 6px;
+  width: 47px;
+  height: 47px;
+  font-size: 0;
+  line-height: 0;
+  background-color: white;
+  border: 2px solid #e9ebec;
+  border-radius: 50%;
+  }
+
+  &__link:hover {
+    border-color: #283645;
+    transition: 0.4s;
+  }
+
+  &__link:active {
+    opacity: 0.1;
+    transition: 0.1s;
+  }
+}
+.quotes{
+  display: none;
+}
+
+.crop,
+.fill,
+.contrast {
+  fill: #283645;
+}
+
+.contrast {
+  position: absolute;
+  top: 6px;
+  left: 4px;
+}
+
+.heart--panoram{
+  position: absolute;
+  left: 118px;
+}
+
 @media(min-width:660px){
+  .user-photo .heart{
+    display: block;
+    margin-left: 91px;
+    width: 14px;
+    height: 14px;
+    margin-left: 100px;
+    margin-top: 4px;
+  }
+  .crop,
+  .fill,
+  .contrast {
+    fill: #d22856;
+  }
+
+  .crop {
+    width: 24px;
+    height: 24px;
+  }
+
+  .fill {
+    width: 26px;
+    height: 24px;
+  }
+
+  .contrast {
+    width: 16px;
+    height: 16px;
+
+    top: 0;
+    left: 0;
+  }
+  .icon-timer{
+    display: block;
+    position: absolute;
+    fill:  #dedede;
+    left: -15px;
+    top: 60px;
+  }
+
+  .icon-editor-diagram{
+    position: absolute;
+    fill: #e9ebec;
+    display: block;
+    z-index: 100;
+    left: 22px;
+    top: 116px;
+  }
+
   .price .icon-yes,
   .price .icon-no {
     display: block;
@@ -119,9 +222,51 @@
   .logo-pink-white-tablet {
     display: block;
   }
+
+  .net-links{
+    width: auto;
+    margin-left: 68px;
+    margin-bottom: 0;
+  }
+  .heart--panoram{
+    left: 0px;
+  }
 }
 
-@media(min-width1200px){
+@media(min-width:1200px){
+  .crop {
+    width: 49px;
+    height: 48px;
+  }
+
+  .fill {
+    width: 49px;
+    height: 48px;
+  }
+
+  .contrast {
+    width: 32px;
+    height: 32px;
+  }
+  .icon-timer{
+    left: 9px;
+    top: 125px;
+  }
+
+  .icon-editor-diagram{
+    left: 47px;
+    top: 180px;
+  }
+  .quotes{
+    display: block;
+    position: relative;
+    height: 80px;
+    margin-left: 279px;
+    padding-bottom: 41px;
+    width: 63px;
+    fill: #dedede;
+  }
+
   .logo-pink-white-tablet,
   .logo-pink-blue-mobile {
     display: none;
@@ -132,4 +277,7 @@
     display: block;
   }
 
+  .net-links{
+    margin-left: 228px;
+  }
 }

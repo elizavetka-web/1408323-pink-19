@@ -1,8 +1,5 @@
 
 .page-header {
-  display: flex;
-  flex-direction: column;
-
   min-height: 237px;
 
   color: white;
@@ -19,9 +16,22 @@
   }
 
   &__wrapper {
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
     position: relative;
-    padding-top: 500px;
-  }
+    }
+
+    &__wrapper--index{
+      padding-top: 455px;
+    }
+
+    .inner-page .page-header__wrapper--index {
+      padding-top: 0;
+    }
+
 
   &__header{
     top: 38px;
@@ -32,10 +42,6 @@
     font-size: 30px;
     line-height: 29px;
     width: 280px;
-  }
-
-  &__wrapper--index {
-    padding-top: 392px;
   }
 }
 
