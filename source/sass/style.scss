@@ -1,40 +1,19 @@
-@import"page-header.scss";
-@import"advantages.scss";
-@import"main-nav.scss";
-@import"board.scss";
-@import"fonts.scss";
-@import"lenta.scss";
-@import"user-photo.scss";
-@import"reviews.scss";
-@import"price.scss";
-@import"page-footer.scss";
-@import"photo-load.scss";
-@import"forma.scss";
-@import"form-design.scss";
-@import"decoration.scss";
-@import"logo.scss";
-@import"icons.scss";
-@import"slider-items.scss";
-html {
-  font-family: sans-serif;
-}
+@import"blocks/main-page.scss";
+@import"blocks/advantages.scss";
+@import"blocks/download-app.scss";
+@import"global/fonts.scss";
+@import"global/base.scss";
+@import"blocks/pictures.scss";
+@import"blocks/user-photo.scss";
+@import"blocks/reviews.scss";
+@import"blocks/price.scss";
+@import"blocks/page-footer.scss";
+@import"blocks/photo-load.scss";
+@import"blocks/form.scss";
+@import"blocks/form-design.scss";
+@import"blocks/decoration.scss";
+@import"blocks/logo.scss";
+@import"blocks/icons.scss";
+@import"blocks/slider-items.scss";
 
-body {
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  line-height: 30px;
-  font-family: "Open Sans","Arial","Helvetica","Garuda",sans-serif;
-  color: #283645;
-  font-style: normal;
-  font-weight: 400;
-  background-color: #fff;
-}
 
-p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}

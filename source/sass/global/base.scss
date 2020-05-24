@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Open Sans","Arial",sans-serif;
+  color: #283645;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+.visually-hidden{
+  display: none;
+}
+.container {
+	width: 280px;
+	margin: 0 auto;
+	padding: 0 20px;
+
+
+	@media (min-width: 700px) {
+		width: 620px;
+		margin: 0 auto;
+		padding: 0 40px;
+	}
+
+	@media (min-width: 1200px) {
+		width: 940px;
+		margin: 0 auto;
+		padding: 0 130px;
+	}
+}

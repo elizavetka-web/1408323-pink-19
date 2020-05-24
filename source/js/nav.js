@@ -1,13 +1,12 @@
-var nav = document.querySelector('.main-nav__wrapper');
-var toggle = document.querySelector('.main-nav__toggle');
-var pageheaderwrapper = document.querySelector('.page-header__wrapper');
+var navMain = document.querySelector (".main-header__inner");
+	var navToggle = document.querySelector (".nav-toggle");
 
-nav.classList.add('main-nav__wrapper--top');
-nav.classList.toggle('main-nav__wrapper--closed');
+	navMain.classList.remove("main-header__inner--nojs");
 
-pageheaderwrapper.classList.add('page-header__wrapper--ineex');
-
-toggle.addEventListener('click', function() {
-  nav.classList.toggle('main-nav__wrapper--closed');
-  toggle.classList.toggle('main-nav__toggle--closed');
-});
+	navToggle.addEventListener ("click", function(event) {
+		if (navMain.classList.contains("main-header__inner--opened")) {
+			navMain.classList.remove("main-header__inner--opened");
+		} else {
+			navMain.classList.add("main-header__inner--opened");
+		}
+	});
