@@ -87,12 +87,12 @@
 
 		@media (min-width: 1200px) {
 			content: "";
-	position: absolute;
-	margin: auto;
-	top: auto;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	    position: absolute;
+	    margin: auto;
+	    top: auto;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
 			width: 1050px;
 			height: 645px;
 			background: url(../img/iphone-hand-desktop@1x.png) no-repeat top center;
@@ -116,7 +116,7 @@
 
 .main-header--index .main-header__wrapper {
 	position: relative;
-	padding-bottom: 395px;
+	padding-bottom: 432px;
 
 	&::after {
 		content: "";
@@ -473,4 +473,3 @@
 		}
 	}
 }
-
