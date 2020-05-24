@@ -107,6 +107,17 @@
 		}
 	}
 }
+@media (min-width: 700px){
+.main-header--index::after {
+display: none;
+}
+}
+@media (min-width: 1200px){
+  .main-header--index::after {
+  display: block;
+  }
+  }
+
 
 .main-header__wrapper {
 	@media (min-width: 1200px) {
@@ -116,7 +127,7 @@
 
 .main-header--index .main-header__wrapper {
 	position: relative;
-	padding-bottom: 432px;
+	padding-bottom: 455px;
 
 	&::after {
 		content: "";

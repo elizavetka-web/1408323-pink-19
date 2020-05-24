@@ -20,6 +20,30 @@
 	}
 }
 
+.download-app::before {
+  display: none;
+
+  @media (min-width: 700px) {
+  display: block;
+	content: "";
+  position: absolute;
+  margin: auto;
+  top: auto;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  width: 700px;
+  height: 545px;
+
+  background: url(../img/iphone-hand-tablet@1x.png) no-repeat top center;
+  background-size: cover;
+	}
+
+	@media (min-width: 1200px) {
+    display: none;
+	}
+  }
+
 .download-app__wrapper {
   position: relative;
 	@media (min-width: 700px) {
@@ -35,7 +59,7 @@
 
 .download-app__headline {
 	position: absolute;
-  top: -187%;
+  top: -193%;
   font-size: 27px;
   line-height: 35px;
   font-weight: 300;
