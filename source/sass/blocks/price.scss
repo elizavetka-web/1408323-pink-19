@@ -1,5 +1,4 @@
 .price{
-  padding-top: 14px;
   padding-bottom: 26px;
   background-color: #f2f2f2;
   position: relative;
@@ -44,10 +43,11 @@
   }
 
   .price__table{
-    margin-left: -123px;
+    margin-left: -161px;
     display: flex;
-    margin-top: 129px;
+    margin-top: 94px;
   }
+
 
   .price__head{
     position: relative;
@@ -58,7 +58,7 @@
     background-color: #283645;
     text-align: center;
     width: 278px;
-	  height: 90px;
+    height: 82px;
     padding-top: 16px;
 
     p{

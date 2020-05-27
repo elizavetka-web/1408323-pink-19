@@ -10,11 +10,12 @@
   text-align: center;
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 46px;
-  width: 200px;
+  margin-bottom: 26px;
+  width: 230px;
+
 
   &--second{
-    width: 200px;
+    width: 201px;
     margin: 0 auto;
   }
 }
@@ -74,7 +75,6 @@
   text-align: center;
 	width: 100%;
 	margin: 0 auto;
-  padding-top: 40px;
 
   &--img{
     z-index: 3;
@@ -90,8 +90,6 @@
   font-size: 18px;
   line-height: 24px;
 
-  margin-top: 38px;
-  margin-bottom: 10px;
 }
 
 .advantages__content {
@@ -105,7 +103,8 @@
 
 .advantages__description{
   font-size: 14px;
-  margin-top: 12px;
+  margin-bottom: 45px;
+  margin-top: 18px;
 }
 
 .advantages__item-img {
