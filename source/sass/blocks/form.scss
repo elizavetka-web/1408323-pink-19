@@ -33,6 +33,7 @@
       display: none;
     }
 
+
     &:last-of-type {
       margin-bottom: 6px;
     }
@@ -118,6 +119,7 @@
 
       order: 3;
     }
+
   }
 
   .form__title {
@@ -394,7 +396,6 @@
         .form__list-item {
           margin-top: 8px;
           margin-bottom: 13px;
-
           flex-grow: 1;
 
           &:first-child {
@@ -415,9 +416,7 @@
         .form__list {
           display: flex;
           flex-wrap: wrap;
-
           flex-direction: row;
-
 
           justify-content: space-between;
           align-content: space-between;
@@ -468,4 +467,3 @@
       }
     }
   }
-
