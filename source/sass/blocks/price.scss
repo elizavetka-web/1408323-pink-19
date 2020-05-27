@@ -43,7 +43,7 @@
   }
 
   .price__table{
-    margin-left: -161px;
+    margin-left: -175px;
     display: flex;
     margin-top: 94px;
   }
@@ -158,10 +158,13 @@ ul{
 }
 
 @media(min-width: 660px){
+  .price{
+    padding-bottom: 46px;
+  }
 
     .price__wrapper{
-      padding-left: 20px;
-      padding-top: 108px;
+      padding-left: 52px;
+      padding-top: 91px;
       margin: 0 auto;
       width: 675px;
     }
@@ -177,8 +180,8 @@ ul{
     }
 
     .price__head{
-      width: 160px;
-      min-height: 78px;
+      width: 151px;
+       height: 63px;
       font-size: 16px;
       font-weight: bold;
 
@@ -197,6 +200,7 @@ ul{
         width: 154px;
       }
       p{
+        margin-top: -5px;
         font-size: 18px;
         font-weight: lighter;;
       }
@@ -204,7 +208,7 @@ ul{
 
     .price__cell{
       min-height: 46px;
-      padding: 7px 15px;
+      padding: 0px 15px;
 
     &--ok{
       font-size: 0;
@@ -221,16 +225,22 @@ ul{
 
 @media(min-width: 1200px){
   .price{
-    padding-top: 108px;
+    padding-bottom: 75px;
+    padding-top: 59px;
+
   }
 
   .price__wrapper{
-      margin: 0 auto;
-      width: 940px;
-      padding-top: 51px;
+    padding-left: 48px;
+    padding-top: 87px;
+    margin: 0 auto;
+    width: 979px;
 
     }
-
+    .price__cell{
+      min-height: 45px;
+      padding: 7px 24px;
+    }
     .price__table{
       position: relative;
     }
@@ -240,14 +250,14 @@ ul{
     }
 
     .price__head{
-      width: 237px;
-      min-height: 60px;
-      font-size: 18px;
-      font-weight: bold;
+      width: 234px;
+    min-height: 83px;
+    font-size: 18px;
+    font-weight: bold;
 
       &--empty{
         background-color: #f2f2f2;
-        width: 237px;
+        width: 234px;
       }
       p{
         font-size: 18px;

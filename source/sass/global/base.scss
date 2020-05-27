@@ -14,20 +14,21 @@ body {
   display: none;
 }
 .container {
-	width: 280px;
-	margin: 0 auto;
-	padding: 0 20px;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0px 65px;
+  padding-left: 58px;
 
 
 	@media (min-width: 700px) {
 		width: 620px;
 		margin: 0 auto;
-		padding: 0 40px;
+		padding: 0 65px;
 	}
 
 	@media (min-width: 1200px) {
 		width: 940px;
 		margin: 0 auto;
-		padding: 0 130px;
+    padding-left: 80px;
 	}
 }

@@ -11,11 +11,12 @@
 
   .page-footer__contacts{
     text-align: center;
-	  padding-bottom: 41px;
+    padding-bottom: 0px;
   }
 
   .page-footer__title{
-    margin-bottom: 35px;
+    margin-bottom: 34px;
+    margin-left: -5px;
     font-size: 24px;
     line-height: 30px;
     font-weight: lighter;
@@ -108,7 +109,7 @@
 
 @media(min-width: 660px){
   .page-footer{
-    padding-top: 46px;
+    padding-top: 15px;
   }
 
   .page-footer__wrapper{
@@ -116,7 +117,9 @@
     }
 
     .page-footer__contacts{
-      padding-bottom: 26px;
+      padding-bottom: 0px;
+      margin-bottom: -51px;
+
       display: flex;
       flex-wrap: wrap;
     }
@@ -127,17 +130,18 @@
       margin-right: auto;
       font-size: 40px;
       line-height: 48px;
-      margin-bottom: 45px;
+      margin-bottom: 17px;
     }
 
     .page-footer__call-us{
-      margin-bottom: 47px;
+      margin-bottom: -3px;
       width: 300px;
       float: left;
     }
 
     .page-footer__write-us{
-      margin-bottom: 47px;
+      margin-left: 20px;
+      margin-bottom: 20px;
       width: 300px;
       float: right;
     }
@@ -168,7 +172,7 @@
 
       align-items: flex-start;
 
-      padding-top: 36px;
+      padding-top: 58px;
       padding-bottom: 37px;
 
       background-color: white;
@@ -192,18 +196,30 @@
   }
 
 @media(min-width:1200px){
+  .page-footer__info, .page-footer__mail {
+
+    margin-bottom: -36px;
+  }
   .page-footer{
-    padding-top: 63px;;
+    padding-top: 25px;
+    padding-left: 0px;
   }
 
   .page-footer__wrapper{
       width: 940px;
     }
+    .page-footer__action{
+      margin-bottom: 26px;
+    }
 
     .page-footer__title{
       width: 940px;
-      padding-left: 180px;
-      padding-right: 180px;
+    padding-left: 191px;
+    padding-right: 180px;
+    font-size: 50px;
+    line-height: 58px;
+    margin-bottom: 38px;
+
     }
 
     .page-footer__call-us{
@@ -212,6 +228,7 @@
 
     .page-footer__write-us{
       order: 3;
+      margin-left: 0px;
     }
 
     .page-footer__visit-us{
@@ -219,7 +236,7 @@
     }
 
     .page-footer__map{
-      height: 501px;
+      height: 523px;
     }
 
     .page-footer__links{
@@ -231,6 +248,11 @@
     .page-footer__developer-link{
       padding-right: 45px;
       font-size: 18px;
+    }
+
+    .page-footer__contacts{
+      margin-bottom: 0px;
+
     }
   }
 

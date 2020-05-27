@@ -1,4 +1,20 @@
 
+.logo-pink-white-mobile,
+.logo-pink-white-tablet,
+.logo-pink-white-desktop {
+  fill: #ffffff;
+}
+.logo-pink-blue-mobile,
+.logo-pink-blue-desktop {
+  fill: #283645;
+}
+
+.logo-pink-white-tablet,
+.logo-pink-white-desktop,
+.logo-pink-blue-desktop {
+  display: none;
+}
+
 .logo {
   height: 66px;
   width: 95px;
@@ -52,12 +68,19 @@
 }
 
 @media (min-width: 660px) {
+  .logo-pink-white-mobile {
+    display: none;
+  }
+
+  .logo-pink-white-tablet {
+    display: block;
+  }
   .logo {
     width: 147px;
-    height: 40px;
-
+    height: 41px;
+    margin-left: 46px;
     &--page-header {
-      top: 27px;
+
 
       &:hover .logo-pink-white-tablet {
         fill: #d22856;
@@ -73,19 +96,34 @@
 
     &--footer {
       margin-bottom: 0;
+      margin-left: 0px;
     }
   }
 }
 
 @media (min-width:1200px) {
+  .logo-pink-white-tablet,
+  .logo-pink-blue-mobile {
+    display: none;
+  }
+
+  .logo-pink-white-desktop,
+  .logo-pink-blue-desktop {
+    display: block;
+  }
+
+  .net-links{
+    margin-left: 228px;
+  }
   .logo {
     position: static;
     float: left;
-
-    margin-top: 13px;
+    margin-left: 15px;
+    margin-top: 2px;
 
     &--footer {
-      margin-top: 0;
+      margin-top: 0px;
+      margin-left: 7px;
 
       &:hover .logo-pink-blue-desktop {
         fill: #d22856;
@@ -113,3 +151,4 @@
     }
   }
 }
+

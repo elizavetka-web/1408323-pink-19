@@ -1,5 +1,6 @@
 .advantages {
   padding-top: 40px;
+  margin-left: -7px;
 }
 
 
@@ -22,10 +23,11 @@
 
 .advantages__wrapper {
   position: relative;
-  padding-top: 53px;
-  background-color: #f2f2f2;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+    margin-top: 18px;
+    padding-bottom: 0px;
+    background-color: #f2f2f2;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 
   &::after{
     content:'';
@@ -40,12 +42,10 @@
 }
 
 .advantages__list{
-
-  width: 280px;
-  margin: 0 auto;
-  list-style-type: none;
-  list-style-position: none;
-  padding: 0;
+  padding-top: 81px;
+    width: 280px;
+    margin: 0 auto;
+    list-style-type: none;
 
   &::before{
       display: none;
@@ -73,27 +73,24 @@
 
 .advantages__item {
   text-align: center;
-	width: 100%;
-	margin: 0 auto;
 
   &--img{
     z-index: 3;
-    padding-bottom: 318px;
+    padding-bottom: 298px;
     background-image: url(../img/iphone-screen-mobile@1x.png);
     background-repeat: no-repeat;
-    background-position: 50% 261px;
+    background-position: 49% 150px;
     background-size: 157px auto;
   }
 }
 
 .advantages__title {
+  margin-top: 21px;
   font-size: 18px;
-  line-height: 24px;
 
 }
 
 .advantages__content {
-
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -103,8 +100,8 @@
 
 .advantages__description{
   font-size: 14px;
-  margin-bottom: 45px;
-  margin-top: 18px;
+  margin-top: -8px;
+  line-height: 26px;
 }
 
 .advantages__item-img {
@@ -116,8 +113,9 @@
 }
 
 @media(min-width: 660px){
-  br{
-    display: none;
+
+  .advantages{
+    padding-top: 48px;
   }
   .advantages__slogan{
       margin-bottom: 0;
@@ -129,16 +127,24 @@
       &--second{
         width: 408px;
         margin: 0 auto;
-        margin-bottom: 50px;
+        margin-bottom: 2px;
       }
     }
 
     .advantages__list{
+      padding-top: 42px;
+      height: 411px;
       width: 620px;
+      height: 436px;
+
+      &::before{
+        margin-left: 0px;
+        top: 34px;
+      }
     }
 
     .advantages__wrapper{
-      padding-bottom: 26px;
+      padding-bottom: 0px;
       padding-top: 38px;
     }
 
@@ -147,7 +153,7 @@
       display: block;
       width: 310px;
       margin-left: 300px;
-      padding-left: 10px;
+      padding-left: 13px;
       text-align: left;
 
       &--img {
@@ -161,12 +167,13 @@
     }
 
     .advantages__science{
+
       display: block;
       position: relative;
       min-height: 183px;
       width: 320px;
       margin: 0 auto;
-      padding-top: 76px;
+      padding-top: 64px;
       padding-left: 315px;
       padding-bottom: 110px;
 
@@ -199,6 +206,8 @@
       margin-bottom: 10px;
       width: 175px;
       display: block;
+
+
     }
 
     .advantages__science-text{
@@ -225,17 +234,18 @@
         font-size: 50px;
         line-height: 60px;
         width: 940px;
+        padding-left: 23px;
 
         &--second{
           width: 620px;
+          margin-bottom: 70px;
         }
       }
 
       .advantages__wrapper {
-        padding-left: 0;
+        padding-left: 21px;
         padding-top: 0;
         padding-bottom: 0;
-
         width: auto;
 
         &::before{
@@ -255,7 +265,7 @@
       }
 
       .advantages__list {
-        margin-top: 56px;
+        margin-top: 63px;
         width: 940px;
         display: flex;
         justify-content: space-between;
@@ -264,17 +274,20 @@
       }
 
       .advantages__item {
-        margin-top: 5px;
+        margin-top: -37px;
         text-align: center;
         flex-basis: 300px;
-        margin-left: 0;
+        margin-left: -14px;
         display: block;
         z-index: 10;
       }
 
+
       .advantages__title {
+        width: 236px;
+        margin-left: 31px;
         margin-top: 56px;
-        margin-bottom: 24px;
+        margin-bottom: 32px;
         font-size: 30px;
         line-height: 30px;
       }
@@ -322,35 +335,36 @@
 
       .advantages__science {
         box-sizing: border-box;
-        width: 940px;
-
-        padding-top: 157px;
+        width: 902px;
+        padding-top: 146px;
         padding-bottom: 113px;
-        padding-left: 365px;
-
+        padding-left: 357px;
         background-size: 253px 253px, 298px 345px;
         background-position: 23px 136px, 0 66px;
-
         &::before {
           width: 220px;
           height: 220px;
 
-          left: 39px;
-          top: 182px;
+          left: 31px;
+           top: 168px;
         }
 
         &::after {
           font-size: 120px;
           line-height: 120px;
 
-          left: 80px;
-          top: 212px;
+          left: 74px;
+          top: 208px;
         }
       }
 
       .advantages__science-title {
           width: auto;
           margin-bottom: 21px;
+
+          br{
+            display: none;
+          }
         }
 
         .advantages__science-text {

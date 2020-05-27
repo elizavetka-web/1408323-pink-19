@@ -1,10 +1,10 @@
 
 .download-app {
   position: relative;
-  padding: 31px 0px 48px;
-  background: #1d2631;
-  text-align: center;
-  z-index: 20;
+  padding: 27px 0px 18px;
+	background: #1d2631;
+	text-align: center;
+	z-index: 20;
 
 	@media (min-width: 700px) {
 		position: relative;
@@ -16,7 +16,8 @@
 	}
 
 	@media (min-width: 1200px) {
-    padding: 143px 0px 121px;
+    padding-top: 110px;
+    padding-bottom: 108px;
 	}
 }
 
@@ -58,55 +59,50 @@
 }
 
 .download-app__headline {
-	position: absolute;
-  top: -193%;
-  font-size: 27px;
-  line-height: 35px;
+  position: absolute;
+  display: block;
+  bottom: 521px;
+  max-width: 282px;
+  margin: 0px auto 29px;
+  font-size: 25px;
+  line-height: 31px;
   font-weight: 300;
-   color: #fff;
+  color: #fff;
 
 	@media (min-width: 700px) {
     position: relative;
-		display: block;
-		max-width: 245px;
-		margin: 0px auto 29px;
 		font-size:40px;
-	  line-height: 49px;
-	  font-weight: 300;
-		color: #fff;
+    line-height: 49px;
+    bottom: 0px;
+    padding-left: 26px;
+    padding-right: 29px;
 	}
 
 	@media (min-width: 1200px) {
 		margin: 0px auto 54px;
-		font-size: 46px;
-	line-height: 1.2;
-	font-weight: 300;
+    font-size: 50px;
+	  line-height: 1.2;
+	  font-weight: 300;
 	}
 }
-.spec {
-  padding-top: 49px;
-  width: 280px;
-  margin: 0 auto;
-  }
 
 .spec__link {
 	margin: auto 18px;
 }
 
 .spec__text {
-	padding-top: 25px;
-
+  padding-top: 2px;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 300;
 	color: #fff;
 
 	@media (min-width: 700px) {
-		padding-top: 37px;
+		padding-top: 17px;
 		font-size: 18px;
 	}
 
 	@media (min-width: 1200px) {
-		padding-top: 55px;
+		padding-top: 27px;
 	}
 }

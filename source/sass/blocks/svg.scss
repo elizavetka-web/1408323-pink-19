@@ -1,18 +1,4 @@
-.logo-pink-white-mobile,
-.logo-pink-white-tablet,
-.logo-pink-white-desktop {
-  fill: #ffffff;
-}
-.logo-pink-blue-mobile,
-.logo-pink-blue-desktop {
-  fill: #283645;
-}
 
-.logo-pink-white-tablet,
-.logo-pink-white-desktop,
-.logo-pink-blue-desktop {
-  display: none;
-}
 .price .icon-yes,
   .price .icon-no {
     display: block;
@@ -21,6 +7,7 @@
   }
 
 .price .icon-yes {
+  margin-left: 81px;
   fill: #3dc644;
 }
 
@@ -81,9 +68,16 @@
 .icon-timer{
  display: none;
 }
+.icon-timer--desk{
+  display: none;
+}
 
 .icon-editor-diagram{
 display: none;
+}
+
+i.con-editor-diagram--desk{
+  display: none;
 }
 
 
@@ -197,6 +191,9 @@ display: none;
     fill:  #dedede;
     left: -15px;
     top: 60px;
+    &--desk{
+      display: none;
+    }
   }
 
   .icon-editor-diagram{
@@ -206,6 +203,9 @@ display: none;
     z-index: 100;
     left: 22px;
     top: 116px;
+    &--desk{
+      display: none;
+    }
   }
 
   .price .icon-yes,
@@ -213,14 +213,6 @@ display: none;
     display: block;
     width: 31px;
     margin: 0 auto;
-  }
-
-  .logo-pink-white-mobile {
-    display: none;
-  }
-
-  .logo-pink-white-tablet {
-    display: block;
   }
 
   .net-links{
@@ -249,34 +241,41 @@ display: none;
     height: 32px;
   }
   .icon-timer{
-    left: 9px;
-    top: 125px;
+    display: none;
+    &--desk{
+      display: block;
+      top: 83px;
+      left: -7px;
+    }
   }
 
   .icon-editor-diagram{
-    left: 47px;
-    top: 180px;
+    display: none;
+
+    &--desk{
+      display: block;
+      display: block;
+      top: 152px;
+      left: 14px;
+    }
   }
   .quotes{
     display: block;
     position: relative;
     height: 80px;
-    margin-left: 279px;
+    margin-left: 452px;
     padding-bottom: 41px;
     width: 63px;
     fill: #dedede;
-  }
+    @media (min-width: 1200px){
 
-  .logo-pink-white-tablet,
-  .logo-pink-blue-mobile {
-    display: none;
+      height: 74px;
+      margin-left: 435px;
+      padding-bottom: 30px;
+      width: 79px;
+      fill: #dedede;
+    }
   }
-
-  .logo-pink-white-desktop,
-  .logo-pink-blue-desktop {
-    display: block;
-  }
-
   .net-links{
     margin-left: 228px;
   }
